@@ -1,0 +1,27 @@
+---
+title: "Teaching"
+listing:
+  id: teaching-listing
+  type: table
+  sort-ui: false
+  filter-ui: false
+  categories: true
+  fields: [title, "Role", "Taught"]
+  contents:
+    - "*.qmd"
+---
+
+All of my teaching resources.
+
+#### Courses
+
+::: {#teaching-listing}
+:::
+
+
+## Teaching Assistant
+
+
+- Regression Analysis, undergraduate, Emory University, Spring 2022, Fall 2023, Fall 2024, Spring 2025
+- Applied Business Analytics, graduate, Emory University, Spring 2024
+- Marketing Analytics, graduate, University of Wisconsin-Madison, Fall 2018

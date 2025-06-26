@@ -1,4 +1,4 @@
 - source: project
-  netlify:
-    - id: 9bf682f1-bba4-41e9-8571-1e5d7192e4ce
-      url: 'https://taupe-platypus-d72b21.netlify.app'
+  quarto-pub:
+    - id: 2eb467cd-34d1-4b9d-a2a4-89f7bdd1576f
+      url: https://ph-nguyen-emory.quarto.pub/fnguyen

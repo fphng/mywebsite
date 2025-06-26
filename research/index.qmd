@@ -1,0 +1,65 @@
+---
+title: "Research"
+subtitle: "All of my published and unpublished research projects. Click on each project to learn more."
+listing:
+  - id: work-in-progress
+    type: default
+    template: ../custom/research-listings.ejs
+    categories: true
+    fields: [title, author, categories]
+    contents:
+      - "work-in-progress/**/*.qmd"
+    exclude:
+      title: "Placeholder"
+  - id: working-papers
+    type: default
+    template: ../custom/research-listings.ejs
+    categories: true
+    fields: [title, author, categories]
+    contents:
+      - "working-papers/**/*.qmd"
+    exclude:
+      title: "Placeholder"
+  - id: published-papers
+    type: default
+    template: ../custom/research-listings.ejs
+    categories: true
+    fields: [image, date, title, author, categories]
+    contents:
+      - "published-papers/**/*.qmd"
+    exclude:
+      title: "Placeholder"
+  - id: other-research
+    type: default
+    template: ../custom/research-listings.ejs
+    categories: true
+    fields: [image, date, title, author, categories]
+    contents:
+      - "other-research/**/*.qmd"
+    exclude:
+      title: "Placeholder"
+page-layout: full
+title-block-banner: true
+---
+
+
+## Work in Progress
+
+:::{#work-in-progress}
+:::
+
+## Working Papers
+
+:::{#working-papers}
+:::
+
+## Published Papers
+
+:::{#published-papers}
+:::
+
+
+## Other Research
+
+:::{#other-research}
+:::

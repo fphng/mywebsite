@@ -2,21 +2,35 @@ project:
   type: website
 
 website:
-  title: "Katherine Hayes"
+  title: "Felicia Nguyen"
+  favicon: static-content/logo/logo-32x32.png
   navbar:
+    logo: static-content/logo/logo.svg
+    left:
+      - href: about.qmd
+        text: About
+      - href: research/index.qmd
+        text: Research
+      - href: blog/index.qmd
+        text: Blog       
+      #- href: teaching/index.qmd
+      #  text: Teaching
+      - href: CV/index.qmd
+        text: CV
+    toggle-position: "right"
+  page-footer:
+    left: "F. Nguyen (2025)"
+    center: © 2025  &middot; Created with [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/) .
     right:
-      - text: "About Me"
-        file: about.qmd
-      - text: "Blog"
-        file: blog.qmd
-      - text: "CV"
-        file: cv.pdf
-    
+      - href: https://github.com/fphng
+        icon: github    
 format:
   html:
-    theme: cosmo
-    css: styles.css
-    toc: false
+    theme: 
+      - minty
+      - custom-theme.scss
+    toc: true
 
 editor: visual
+
 

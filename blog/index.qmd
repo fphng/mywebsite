@@ -1,0 +1,15 @@
+---
+title: Blog
+subtitle: "My random thoughts and occasionally useful articles"
+listing:
+  contents: 
+  - posts/**/*.qmd
+  - posts/**/**/*.qmd
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---

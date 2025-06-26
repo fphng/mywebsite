@@ -1,0 +1,37 @@
+/*-- scss:defaults --*/
+/* set the navbar background and text color */
+$navbar-bg: #002878 !default;   /* whatever hex you like */
+$navbar-fg: #fcfcfc !default;   /* ensure good contrast */
+
+
+/* un-visited link color */
+$link-color:      #d28e00 !default;
+
+/* hover/focus link color */
+$link-hover-color:    #7d610f !default;
+
+/* active (when you click) link color */
+$link-active-color:   #d28e00 !default;
+
+/*-- scss:rules --*/
+/* (optional) extra fine-tuning CSS can go here */
+/*-- scss:defaults --*/
+
+/* change the “brand” color that powers .btn-primary, links, etc */
+$primary:            #d28e00 !default;
+
+/* adjust the contrasting text color on .btn-primary */
+$primary-contrast:   #ffffff !default;
+
+/* you can also tweak secondary, success, danger, etc */
+$secondary:          #002878 !default;
+$secondary-contrast: #ffffff !default;
+
+/*-- scss:rules --*/
+
+/* if you need finer control, e.g. hover states: */
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: darken($primary, 10%);
+  border-color:   darken($primary, 12%);
+}

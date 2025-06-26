@@ -1,9 +1,0 @@
----
-title: "Model Parameterization"
-subtitle: "A series"
-listing:
-  contents: posts/param_series/**/*.qmd
-  sort: "date desc"
-  type: default
-page-layout: full
----

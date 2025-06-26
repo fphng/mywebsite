@@ -1,0 +1,26 @@
+---
+title: "Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content"
+subtitle: "How does Generative AI affect Content Strategy, and what can platforms do?"
+author: 
+  - Felicia Nguyen
+# date:
+categories: ["AI", "Content Strategy", "Theory"]
+# image: 
+# pdf-url: 
+# external-url:
+# external-name:
+# citation:
+#   type: article-journal
+#   container-title: 
+#   volume: 
+#   issue:
+#   page-first:
+#   issn:
+#   doi:
+page-layout: full
+title-block-banner: true
+---
+
+# Abstract
+
+Generative artificial intelligence (AI) has collapsed the marginal cost of producing social-media content, raising concern that low-quality “AI spam’’ could flood user feeds and depress creator wages.  We build a two-lever contest model in which each creator chooses both *scale* (posting effort) and *originality* (differentiation).  Adopting AI requires a fixed fee but lowers the marginal cost of effort, while a novelty-weighted ranking algorithm rewards distinctiveness.  For the empirically relevant case of a linear Tullock contest, we derive a closed-form adoption threshold $f^{\dagger}(\theta)\propto v^{3/2}$, show existence of equilibrium, and map three regimes: a **scaled-output equilibrium** in which all creators adopt AI and differentiation collapses, a **craftsmanship equilibrium** with zero AI take-up, and a **mixed equilibrium** featuring endogenous sorting by talent.  Comparative statics reveal that a modest authenticity signal and a small originality subsidy jointly recover over 90\% of the welfare lost when AI adoption costs fall by 80\%—exactly the price shock OpenAI announced in June 2025. Policy simulations suggest that a revenue-neutral licence-and-subsidy scheme raises surplus by 3.1\% and lowers the Gini coefficient on creator earnings from 0.46 to 0.41, outperforming Pigovian hashtag levies or hard posting caps.

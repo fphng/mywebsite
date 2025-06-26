@@ -1,27 +1,41 @@
 ---
-format:  
-  html:
-    grid:
-      margin-width: 350px
-title: "About Me"
-title-block-banner: about_header.jpg
-title-block-banner-color: white
+title: About
+subtitle: "A little bit about myself."
+about:
+  template: trestles
+  image: static-content/about-me-profile.jpg
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/fphng
+      target: _blank
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/phhung31/
+      target: _blank
+    - icon: envelope-fill
+      text: Email
+      href: mailto:phuc.hung.nguyen@emory.edu
+    - icon: file-earmark-person
+      text: CV
+      href: static-content/CV.pdf
+      target: _blank
+page-layout: full
+title-block-banner: true
 ---
 
-I'm a climate change ecologist and currently a [NSF Postdoctoral Fellow](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2219248&HistoricalAwards=false) in the [Forest Futures Lab](http://forestfutureslab.org/) at the [Cary Institute of Ecosystem Studies](http://caryinstitute.org). I work in the intersection of paleoecology, landscape ecology and disturbance ecology, using field, lab, and modeling tools to study how ecosystems change over space and time.
+I grew up in the beautiful riverside town of Hoi An, Vietnam.
 
-::: column-margin
-![Comic by the lovely and incomparable [Sophie Lucido Johnson](https://www.sophielucidojohnson.com/) and [Sammi Skolmoski](https://sammiskolmoski.com/index.html/)](unprecedented.jpg)
-:::
+I spent my high school years in nearby Da Nang City, attending Le Qui Don High School for the Gifted, where I specialized in Chemistry, and stumbled my way into getting an National Olympiad in Informatics Gold medal.
 
-I got into ecology through the past - I worked as an undergraduate field and lab assistant in [Jack William](https://williamspaleolab.github.io/)'s paleoecology lab at the University of Wisconsin Madison, coring lake sediments and counting charcoal samples, which sparked an interest in fire.
+For college, I went to Foreign Trade University in Ho Chi Minh City, where I studied Economics and International Business.
 
-After graduating from UW-Madison, I moved to Eugene, Oregon to work with [Dan Gavin](https://pages.uoregon.edu/dgavin/) at the University of Oregon. Working in Northern California, I sampled soil and charcoal in old growth coast redwood forests, trying to understand how frequent prehistoric fire was in those forests, and the role it played in soil carbon storage.
+Afterwards, I spent two years in the Fintech sector, where I spearheaded the development of one of the earliest banking chatbots in Southeast Asia, which allowed customers to apply and manage their loans and credit cards with ease via Facebook Messenger, Whatsapp, and other messaging platforms, using natural language.
 
-After the redwoods, I moved north and forward in time to Alaskan boreal forests, completing a PhD in Integrative and Systems Biology at the University of Colorado Denver. Working with [Brian Buma](https://www.brianbuma.com/) (now at the Environmental Defense Fund), I picked up training in landscape, disturbance and fire ecology, combining field measurements of forest composition, structure and carbon with landscape and fire behavior models. I worked in burned black spruce forests in the Interior of Alaska, measuring how frequent fire (reburning) changes forest communities, forest carbon storage and future patterns of fire.
+I moved to the US in 2017 to pursue my MBA/MS.in Marketing Analytics at the AC Nielsen Center for Marketing Research at the University of Wisconsin-Madison, and then down south to Atlanta for my Ph.D. in Quantitative Marketing at Emory University.
 
-While setting up my PhD field sites, I stumbled down a herbivory rabbit hole after noticing intense browsing from moose and hare in my reburned plots. I put together a proposal to work with [Winslow Hansen](https://www.caryinstitute.org/science/our-scientists/dr-winslow-d-hansen) and [Jill Johnstone](https://npelusask.weebly.com/) to use process-based landscape modeling to explore whether herbivores like moose and hare might interact with fire to shape forest composition and carbon at a landscape scale.
+## Education
 
-Outside of research, I collect records and houseplants and I grew up in the Midwest so I have strong opinions about cheese and the packers. [One of my favorite places in the world (and the reason I got into science) is the Milwaukee Public Museum](https://shepherdexpress.com/culture/milwaukee-history/a-love-letter-to-the-milwaukee-public-museum/).
+**Ph.D in Marketing** Emory University \| Atlanta, GA
 
-My teaching philosophy is [here](https://krhayes.com/files/Teaching_statement.pdf), and my CV is [here](https://krhayes.com/cv.pdf).
+**M.S. in Business Analytics** University of Wisconsin-Madison \| Madison, WI
