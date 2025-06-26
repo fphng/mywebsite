@@ -1,0 +1,13 @@
+---
+title: "Working with iLand Output"
+subtitle: "A series"
+listing:
+  contents: posts/iLand_series/**/*.qmd
+  sort: "date desc"
+  type: default
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+sidebar: series
+---

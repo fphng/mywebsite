@@ -1,0 +1,287 @@
+---
+title: Filtering MTBS perimeters by severity
+subtitle: a primer on Alaska Fire Perimeter Data
+date: 2024-04-16
+categories: [Spatial Data Analysis]
+date-modified: last-modified
+bibliography: references.bib
+---
+
+As part of my work with the [Past, Present and Future of Boreal Feedbacks](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2215118&HistoricalAwards=false) project, this summer I'll be sampling forest composition and structure in forests that have reburned. One of our early goals with this project was to sample reburned forests off the road system - in part because they tend to go unsampled for obvious reasons[^1], and in part because we're combining modern observations of reburned forests with lake sediment records that provide context on the last 2,500 years of forest composition, and those lakes are off the road system.
+
+[^1]: Alaska is big
+
+Functionally, that means helicopter work (!!). Going into it, I was blinded a bit by the excitement of flying helicopters (beautiful views!!), and hadn't braced myself for some of the challenges (also dangerous!!). It added pressure to picking field sites: helicopters can only land in so many spots, and it's an expensive privilege, so you can't just wander into the woods and pick a spot[^2].
+
+[^2]: For the record, also not how I pick field sites
+
+I've been digging through fire perimeter datasets, trying to locate fires that overlap.
+
+# Fire perimeter data in Alaska
+
+There are functionally two forms of fire perimeter data in Alaska: the [Alaska Large Fire Database](https://www.frames.gov/catalog/10465) (ALFD) and the [Monitoring Trends in Burn Severity (MTBS)](https://www.mtbs.gov/) dataset (for more, see link to an incomplete glossary of Alaska data products).
+
+### [Alaska Large Fire Database](https://blm-egis.maps.arcgis.com/apps/instant/portfolio/index.html?appid=4841da6a16804c07849c27ea7db2a26b) (ALFD)
+
+The Alaska Large Fire Database, often referred to as "Alaska Large Fire"[^3] in my collaborative spaces for reasons I'm realizing I don't know, is maintained by the Alaska Fire Service and contains fire perimeter data from 1942 to the present. It was developed in the 90s when collaborators from the Environmental Research institute of Michigan and the Alaska Interagency Coordination Center digitized and standardized perimeter information from fire reports that dated back to 1942 [@kasischke2002].
+
+[^3]: said quickly, all in one word
+
+Using ground surveys, airborne surveys and aerial or satellite photography
+
+## Monitoring Trends in Burn Severity (MTBS)
+
+MTBS data consists of burn severity and extent information on large fires[^4] across the US from 1984 to the present. Both burn severity and fire extent are derived from Landsat or Sentinel-2 data at a spatial resolution of 30 meters and a temporal resolution of 16 days or so - images are constructed pre- and post-fire to compare Normalized Burn Ratio (NBR) or Differenced Normalized Burn Ratio (dNBR). From there, MTBS depicts severity as a gradient of vegetation response from low (not much vegetation response) to high (potentially complete combustion of vegetation)[^5].
+
+[^4]: defined here as 1,000 acres or bigger in the Western US
+
+[^5]: with additional categories for unburned, increased greenness or outliers caused by clouds, shadows, water bodies, etc
+
+## Difference between ALFD and MTBS
+
+Alaska Large Fire Database has been assumed to overestimate burned area within mapped fire events [@chen2021], and produces consistently higher estimates of area burned across Alaska compared to MTBS.
+
+In contrast, MTBS excludes fires less than 1,000 acres, so there are clear reasons to believe it underestimates burned area.
+
+Understanding the strengths and drawbacks of both is important - in the context of reburning, MTBS is a particularly useful database - older fire perimeters from ALFD become less precise (cite), sometimes overestimating where the fires overlapped [@buma2022].
+
+\[Brief aside on self-regulating fire\]
+
+# Update - New Alaska fire perimeter data
+
+Fun that as I was writing this, I was immediately corrected - the USGS has released updated fire perimeters for the National Wildlife Refuges
+
+Now, this only covers the Wildlife Refuges in Alaska, but those refuges cover about 30% of the state (and represent 80% of all the land in the National Fish and Wildlife Refuge System), so that's still a pretty big chunk of landscape.
+
+# Filtering MTBS in R
+
+I wanted to filter out pixels within MTBS that burned at high severity in both fires.
+
+```{r set up}
+#| echo: false
+library(terra)
+library(sf)
+```
+
+An aside - I'm storing these files on a remote server. The bash code below mounts the folder I need so I can access it in Quarto.
+
+```{bash}
+open smb://10.60.2.10/FF_Lab/personal_storage/kate_storage/GIS/
+```
+
+We'll start with loading in the DNBR raster from the Dall City fire - this fire burned 530,717 acres in 2004.
+
+```{r}
+#| label: Yukon Dall City
+DallCity <- rast("/Volumes/GIS/site selection 2024/targetMTBS/Yukon/DallCity_2004/ak6628114999320040706_20010623_20050720_dnbr6.tif")
+    
+plot(DallCity, main = "Original")
+```
+
+| Col1 | Col2                     | Col3 |
+|------|--------------------------|------|
+| 1    | unburned to low severity |      |
+| 2    | low severity             |      |
+| 3    | moderate severity        |      |
+| 4    | high severity            |      |
+
+We'll get rid of the black border:
+
+```{r dall city black border}
+DallCity <- subst(DallCity, 0, NA)
+
+plot(DallCity, main = "Original")
+```
+
+Within that perimeter, here are the cells (again, 30 meter resolution) that burned at high severity (as defined by MTBS):
+
+```{r dall city high severity}
+DallCityHS <- subst(DallCity, 4, 4, 
+                    others = NA)
+
+plot(DallCityHS, main = "High")
+```
+
+Now, we can use the same indexing to trim down to just the high severity cells:
+
+```{r dall city trim}
+DallCityHS <- trim(DallCityHS)
+
+plot(DallCityHS, main = "Trim")
+```
+
+The Dall City fire overlaps with West fork, which burned XX acres in
+
+```{r Yukon - West Fork}
+    WestFork <- rast("/Volumes/GIS/site selection 2024/targetMTBS/Yukon/WestFork_2015/ak6635014986720150620_20140705_20160624_dnbr6.tif")
+  
+    plot(WestFork, main = "Original")
+  
+    WestFork <- subst(WestFork, 0, NA)
+    
+    plot(WestFork, main = "Original")
+ 
+    
+    WestForkHS <- subst(WestFork, 4, 4, 
+                    others = NA)
+    
+    plot(WestForkHS)
+    
+   overlap <- intersect(WestForkHS, DallCityHS)
+   
+   plot(overlap)
+   
+   yukon2xHS <- subst(overlap, TRUE, 1, others = NA)
+   
+   plot(yukon2xHS)
+   
+   yukon2xHS <- trim(yukon2xHS)
+   
+   plot(yukon2xHS)
+   
+    yukon2xHS_shp <- as.polygons(yukon2xHS)
+    plot(yukon2xHS_shp)
+    
+    # writeVector(yukon2xHS_shp, 
+     #     "/Users/katherinehayes/Desktop/yukon2xHS.shp",
+     #     overwrite = TRUE)
+```
+
+```{r Kanuti}
+## Kanuti
+
+  ## BTTS 1991 #####################################
+  
+  KanBTT <- rast("/Volumes/GIS/site selection 2024/targetMTBS/Kanuti/BTTS1991/ak6670715154819910630_19860613_19920605_dnbr6.tif")
+  
+  plot(KanBTT, main = "Original")
+  
+  KanBTT <- subst(KanBTT, 0, NA)
+    
+  plot(KanBTT, main = "Original")
+ 
+    
+  KanBTTHS <- subst(KanBTT, 4, 4, 
+                    others = NA)
+    
+    plot(KanBTTHS)
+
+```
+
+Next, we'll look
+
+```{r Kanuti - Evansville}
+
+  Evan <- rast("/Volumes/GIS/site selection 2024/targetMTBS/Kanuti/Evansville2004/ak6687815131320040706_20020624_20050616_dnbr6.tif")
+  
+  plot(Evan, main = "Original")
+  
+  Evan <- subst(Evan, 0, NA)
+    
+  plot(Evan, main = "Original")
+ 
+    
+  EvanHS <- subst(Evan, 4, 4, 
+                    others = NA)
+    
+    plot(EvanHS)
+    
+```
+
+```{r Kanuti - Combining}
+
+  ## Combining #######################
+    
+    overlap <- intersect(KanBTTHS, EvanHS)
+   
+   plot(overlap)
+   
+   Kanuti2xHS <- subst(overlap, TRUE, 1, others = NA)
+   
+   plot(Kanuti2xHS)
+   
+   Kanuti2xHS <- trim(Kanuti2xHS)
+   
+   plot(Kanuti2xHS)
+   
+    Kanuti2xHS_shp <- as.polygons(Kanuti2xHS)
+    plot(Kanuti2xHS_shp)
+    
+     #writeVector(Kanuti2xHS_shp, 
+       #   "/Users/katherinehayes/Desktop/Kanuti2xHS.shp",
+        #  overwrite = TRUE)
+```
+
+```{r Last Chance - BTT}
+
+  ## BTT 1994 #####################################
+  
+  BTT <- rast("/Volumes/GIS/site selection 2024/targetMTBS/LastChance/BTT1994/ak6712115052019940608_19860823_19950825_dnbr6.tif")
+  
+    BTT <- subst(BTT, 0, NA)
+    
+  plot(BTT, main = "Original")
+ 
+    
+  BTThs <- subst(BTT, 4, 4, 
+                    others = NA)
+    
+    plot(BTThs)
+```
+
+```{r Last Chance - Chapman}
+
+  ## Chapman 2005 #####################################
+  
+  Chapman <- rast("/Volumes/GIS/site selection 2024/targetMTBS/LastChance/Chapman2005/ak6707615031720050530_20020617_20060612_dnbr6.tif")
+  
+  plot(Chapman, main = "Original")
+   
+  Chapman <- subst(Chapman, 0, NA)
+    
+  plot(Chapman, main = "Original")
+ 
+  ChapmanHS <- subst(Chapman, 4, 4, 
+                    others = NA)
+    
+    plot(ChapmanHS)
+```
+
+```{r Last Chance - Combining}
+
+  ## Combining #######################
+  
+   overlap <- intersect(BTThs, ChapmanHS)
+   
+   plot(overlap)
+   
+   Last2xHS <- subst(overlap, TRUE, 1, others = NA)
+   
+   plot(Last2xHS)
+   
+   Last2xHS <- trim(Last2xHS)
+   
+   plot(Last2xHS)
+   
+    Last2xHS_shp <- as.polygons(Last2xHS)
+    plot(Last2xHS_shp)
+    
+     #writeVector(Last2xHS_shp, 
+       #   "/Users/katherinehayes/Desktop/LastChance2xHS.shp",
+        #  overwrite = TRUE)
+
+```
+
+From there, you
+
+# Update: new fire perimeters
+
+Carson et al. from the USGS has put out an analysis updating fire perimeters in Alaska.
+
+# More Resources
+
+## Session Info
+
+```{r session info}
+sessionInfo()
+```

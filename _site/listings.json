@@ -1,0 +1,26 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/Post_MappingRefuges/index.html",
+      "/posts/param_series/Draft_MooseWeight/index.html",
+      "/posts/Post_hemispheR/index.html",
+      "/posts/iLand_series/Draft_iLandFireOutput/index.html",
+      "/posts/Post_MTBS/index.html",
+      "/posts/Draft_ResearchWorkflow/index.html",
+      "/posts/Draft_WebsiteBuild/index.html"
+    ]
+  },
+  {
+    "listing": "/iLand_landing.html",
+    "items": [
+      "/posts/iLand_series/Draft_iLandFireOutput/index.html"
+    ]
+  },
+  {
+    "listing": "/param_landing.html",
+    "items": [
+      "/posts/param_series/Draft_MooseWeight/index.html"
+    ]
+  }
+]
