@@ -2,3 +2,6 @@
   quarto-pub:
     - id: 2eb467cd-34d1-4b9d-a2a4-89f7bdd1576f
       url: https://ph-nguyen-emory.quarto.pub/fnguyen
+  netlify:
+    - id: 904ff4b8-10a1-4d41-903b-5bb044a17612
+      url: https://fnguyen.netlify.app

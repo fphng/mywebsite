@@ -1,1 +1,1 @@
-Sitemap: https://2eb467cd-34d1-4b9d-a2a4-89f7bdd1576f.netlify.app/sitemap.xml
+Sitemap: https://fnguyen.netlify.app/sitemap.xml

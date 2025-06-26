@@ -7,25 +7,60 @@
     "text": "A first year graduate course aimed to prepare students with practical programming skills for pursuing academic research.\nI designed and instructed this course.\n\nCourse Materials:\n\nBrown University, Spring 2025\nBrown University, Spring 2024\n\n\n\nCourse Description\nThis course prepares students to conduct independent research by providing the necessary skills in programming and project organization. Topics covered will include version control, integrated development environments (IDEs), programming basics, package environments, functional programming, data visualization, data science, and more. Material will be presented using the programming language R, with some time spent on introductions to Python, Julia, and some basics of HTML. By the end of the course students should feel comfortable in the major programming languages used in economic research and in producing their own work as a replicable, sustainable project.\n\n\nTeaching Reviews\n\nBrown University, Spring 2024"
   },
   {
-    "objectID": "research/work-in-progress/2025-01-31-AI-Competition/index.html",
-    "href": "research/work-in-progress/2025-01-31-AI-Competition/index.html",
-    "title": "Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content",
+    "objectID": "research/working-papers/2024-03-21-Math-Edu/index.html",
+    "href": "research/working-papers/2024-03-21-Math-Edu/index.html",
+    "title": "Long-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms",
     "section": "",
-    "text": "Abstract\nGenerative artificial intelligence (AI) has collapsed the marginal cost of producing social-media content, raising concern that low-quality “AI spam’’ could flood user feeds and depress creator wages. We build a two-lever contest model in which each creator chooses both scale (posting effort) and originality (differentiation). Adopting AI requires a fixed fee but lowers the marginal cost of effort, while a novelty-weighted ranking algorithm rewards distinctiveness. For the empirically relevant case of a linear Tullock contest, we derive a closed-form adoption threshold \\(f^{\\dagger}(\\theta)\\propto v^{3/2}\\), show existence of equilibrium, and map three regimes: a scaled-output equilibrium in which all creators adopt AI and differentiation collapses, a craftsmanship equilibrium with zero AI take-up, and a mixed equilibrium featuring endogenous sorting by talent. Comparative statics reveal that a modest authenticity signal and a small originality subsidy jointly recover over 90% of the welfare lost when AI adoption costs fall by 80%—exactly the price shock OpenAI announced in June 2025. Policy simulations suggest that a revenue-neutral licence-and-subsidy scheme raises surplus by 3.1% and lowers the Gini coefficient on creator earnings from 0.46 to 0.41, outperforming Pigovian hashtag levies or hard posting caps."
+    "text": "Abstract\nThis study investigates the impact of high school mathematics education on the financial behavior of individuals in later life. To assess this relationship, we employ a staggered treatment robust event study design that exploits variations in the requirements of high school math coursework across several US states following a series of curricular reforms in the late 1980s. Our findings indicate that increasing the required level of mathematical education has a significant impact on various aspects of financial behavior in adulthood. Specifically, we observe a reduction of up to 15.4% in monthly spending on packaged goods and a corresponding increase of over 25% in the use of coupons. These effects are robust to potential biases arising from staggered adoption or temporal and spatial correlations. In addition, our analyses demonstrate that the results vary between demographic groups, with a more pronounced effect among minorities. We also observe that the impact of high school math education on financial behavior persists with age, even though the magnitude of the effects may decrease. Further, our study provides evidence of the role of mathematical literacy in shaping consumers’ responses to economic crises. Treated households exhibited an increase in the uptake of coupons and price promotions following the Great Recession of 2008. Overall, our study highlights the important role of high school mathematics education in shaping financial behavior in adulthood and sheds light on the potential benefits of enhancing mathematical literacy among the population."
   },
   {
-    "objectID": "research/other-research/placeholder/index.html",
-    "href": "research/other-research/placeholder/index.html",
+    "objectID": "research/published-papers/placeholder/index.html",
+    "href": "research/published-papers/placeholder/index.html",
     "title": "Placeholder",
     "section": "",
     "text": "Just exists so the working paper list always matches something, even when there are no working papers to show. Otherwise, Quarto throws a compilation error."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Felicia Nguyen",
+    "objectID": "research/index.html#working-papers",
+    "href": "research/index.html#working-papers",
+    "title": "Research",
+    "section": "Working Papers",
+    "text": "Working Papers\n\n\n\n\n  \n\n  \n\n      \n      \n          \n            Long-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms\n          \n          How does childhood mathematical education affect adults' consumption behavior.\n\n          \n            \n            \n            \n            \n               Felicia Nguyen, David Schweidel.  \n            \n            \n            \n            \n              PDF\n            \n          \n          \n\n      \n\n  \n  \n\n  \n\n      \n      \n          \n            Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content\n          \n          How does Generative AI affect Content Strategy, and what can platforms do?\n\n          \n            \n            \n            \n            \n               Felicia Nguyen.  \n            \n            \n            \n            \n          \n          \n\n      \n\n  \n  \n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/index.html#work-in-progress",
+    "href": "research/index.html#work-in-progress",
+    "title": "Research",
+    "section": "Work in Progress",
+    "text": "Work in Progress\n\n\n\n\n  \n\n  \n\n      \n      \n          \n            Latent–Gaussian Distributional Synthetic Control for Unstructured Marketing Conten\n          \n          A high dimensional extension of the very interesting Distributional Synthetic Control method.\n\n          \n            \n            \n            \n            \n               Felicia Nguyen.  \n            \n            \n            \n            \n          \n          \n\n      \n\n  \n  \n\n\nNo matching items"
+  },
+  {
+    "objectID": "CV/index.html",
+    "href": "CV/index.html",
+    "title": "Curriculum vitæ",
     "section": "",
-    "text": "I’m a PhD Candidate at Emory University. I’ll be on the job market 2025-2026. In my research, I combine causal inference and deep learning to answer questions related to digital content strategy and platform design."
+    "text": "Download current CV"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "How I built my site\n\n\nMigrating from blogdown to Quarto\n\n\n\nWorkflow\n\n\n\nBreaking the fourth wall\n\n\n\n\n\nApr 15, 2024\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I grew up in the beautiful riverside town of Hoi An, Vietnam.\nI spent my high school years in nearby Da Nang City, attending Le Qui Don High School for the Gifted, where I specialized in Chemistry, and stumbled my way into getting an National Olympiad in Informatics Gold medal.\nFor college, I went to Foreign Trade University in Ho Chi Minh City, where I studied Economics and International Business.\nAfterwards, I spent two years in the Fintech sector, where I spearheaded the development of one of the earliest banking chatbots in Southeast Asia, which allowed customers to apply and manage their loans and credit cards with ease via Facebook Messenger, Whatsapp, and other messaging platforms, using natural language.\nI moved to the US in 2017 to pursue my MBA/MS.in Marketing Analytics at the AC Nielsen Center for Marketing Research at the University of Wisconsin-Madison, and then down south to Atlanta for my Ph.D. in Quantitative Marketing at Emory University."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\nPh.D in Marketing Emory University | Atlanta, GA\nM.S. in Business Analytics University of Wisconsin-Madison | Madison, WI"
   },
   {
     "objectID": "blog/posts/Draft_WebsiteBuild/index.html",
@@ -105,81 +140,32 @@
     "text": "Session info\n\nsessionInfo()\n\nR version 4.3.3 (2024-02-29 ucrt)\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\nRunning under: Windows 11 x64 (build 26100)\n\nMatrix products: default\n\n\nlocale:\n[1] LC_COLLATE=English_United States.utf8 \n[2] LC_CTYPE=English_United States.utf8   \n[3] LC_MONETARY=English_United States.utf8\n[4] LC_NUMERIC=C                          \n[5] LC_TIME=English_United States.utf8    \n\ntime zone: America/New_York\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] htmlwidgets_1.6.4 compiler_4.3.3    fastmap_1.1.1     cli_3.6.2        \n [5] tools_4.3.3       htmltools_0.5.7   yaml_2.3.8        rmarkdown_2.25   \n [9] knitr_1.45        jsonlite_1.8.8    xfun_0.41         digest_0.6.34    \n[13] rlang_1.1.3       evaluate_0.23"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Felicia Nguyen",
     "section": "",
-    "text": "I grew up in the beautiful riverside town of Hoi An, Vietnam.\nI spent my high school years in nearby Da Nang City, attending Le Qui Don High School for the Gifted, where I specialized in Chemistry, and stumbled my way into getting an National Olympiad in Informatics Gold medal.\nFor college, I went to Foreign Trade University in Ho Chi Minh City, where I studied Economics and International Business.\nAfterwards, I spent two years in the Fintech sector, where I spearheaded the development of one of the earliest banking chatbots in Southeast Asia, which allowed customers to apply and manage their loans and credit cards with ease via Facebook Messenger, Whatsapp, and other messaging platforms, using natural language.\nI moved to the US in 2017 to pursue my MBA/MS.in Marketing Analytics at the AC Nielsen Center for Marketing Research at the University of Wisconsin-Madison, and then down south to Atlanta for my Ph.D. in Quantitative Marketing at Emory University."
+    "text": "I’m a PhD Candidate at Emory University. I’ll be on the job market 2025-2026. In my research, I combine causal inference and deep learning to answer questions related to digital content strategy and platform design."
   },
   {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About",
-    "section": "Education",
-    "text": "Education\nPh.D in Marketing Emory University | Atlanta, GA\nM.S. in Business Analytics University of Wisconsin-Madison | Madison, WI"
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "How I built my site\n\n\nMigrating from blogdown to Quarto\n\n\n\nWorkflow\n\n\n\nBreaking the fourth wall\n\n\n\n\n\nApr 15, 2024\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "CV/index.html",
-    "href": "CV/index.html",
-    "title": "Curriculum vitæ",
-    "section": "",
-    "text": "Download current CV"
-  },
-  {
-    "objectID": "research/index.html",
-    "href": "research/index.html",
-    "title": "Research",
-    "section": "",
-    "text": "How does Generative AI affect Content Strategy, and what can platforms do?\n\n          \n            \n            \n            \n            \n               Felicia Nguyen.  \n            \n            \n            \n            \n          \n          \n\n      \n\n  \n  \n\n\nNo matching items"
-  },
-  {
-    "objectID": "research/index.html#work-in-progress",
-    "href": "research/index.html#work-in-progress",
-    "title": "Research",
-    "section": "",
-    "text": "How does Generative AI affect Content Strategy, and what can platforms do?\n\n          \n            \n            \n            \n            \n               Felicia Nguyen.  \n            \n            \n            \n            \n          \n          \n\n      \n\n  \n  \n\n\nNo matching items"
-  },
-  {
-    "objectID": "research/index.html#working-papers",
-    "href": "research/index.html#working-papers",
-    "title": "Research",
-    "section": "Working Papers",
-    "text": "Working Papers\n\n\n  No Content\n\nNo matching items"
-  },
-  {
-    "objectID": "research/index.html#published-papers",
-    "href": "research/index.html#published-papers",
-    "title": "Research",
-    "section": "Published Papers",
-    "text": "Published Papers\n\n\n  No Content\n\nNo matching items"
-  },
-  {
-    "objectID": "research/index.html#other-research",
-    "href": "research/index.html#other-research",
-    "title": "Research",
-    "section": "Other Research",
-    "text": "Other Research\n\n\n  No Content\n\nNo matching items"
-  },
-  {
-    "objectID": "research/published-papers/placeholder/index.html",
-    "href": "research/published-papers/placeholder/index.html",
+    "objectID": "research/other-research/placeholder/index.html",
+    "href": "research/other-research/placeholder/index.html",
     "title": "Placeholder",
     "section": "",
     "text": "Just exists so the working paper list always matches something, even when there are no working papers to show. Otherwise, Quarto throws a compilation error."
   },
   {
-    "objectID": "research/working-papers/placeholder/index.html",
-    "href": "research/working-papers/placeholder/index.html",
-    "title": "Placeholder",
+    "objectID": "research/work-in-progress/2025-05-31-LG-DISC/index.html",
+    "href": "research/work-in-progress/2025-05-31-LG-DISC/index.html",
+    "title": "Latent–Gaussian Distributional Synthetic Control for Unstructured Marketing Conten",
     "section": "",
-    "text": "Just exists so the working paper list always matches something, even when there are no working papers to show. Otherwise, Quarto throws a compilation error."
+    "text": "Abstract\nTraditional synthetic‐control estimators recover mean‐level treatment effects by constructing a weighted combination of control units that best reproduces the pre‐treatment trajectory of a treated unit. Distributional Synthetic Control (Gunsilius, 2023) generalizes this idea to the entire outcome distribution by replacing squared‐error fit with optimal‐transport discrepancy between empirical distribution functions. Yet existing implementations assume scalar outcomes such as wages or sales. We develop a new Latent–Gaussian DiSC (LG‑DiSC) that brings distributional causal analysis to unstructured text and other high‐volume digital outputs pervasive in quantitative marketing. We embed every document in a low‐dimensional latent space using a Variational Auto‑Encoder (VAE), summarize each period’s latent codes by a single multivariate Gaussian, and exploit the closed‐form Wasserstein‑2 distance and barycenter between Gaussian measures. The approach preserves DiSC’s identification logic, runs in seconds on millions of documents, and, with a decoder, generates counterfactual text for substantive interpretation. We derive consistency and asymptotic normality of the weight estimator, quantify approximation error from the Gaussian sketch, and validate operating characteristics in simulation."
+  },
+  {
+    "objectID": "research/working-papers/2025-01-31-AI-Competition/index.html",
+    "href": "research/working-papers/2025-01-31-AI-Competition/index.html",
+    "title": "Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content",
+    "section": "",
+    "text": "Abstract\nGenerative artificial intelligence (AI) has collapsed the marginal cost of producing social-media content, raising concern that low-quality “AI spam’’ could flood user feeds and depress creator wages. We build a two-lever contest model in which each creator chooses both scale (posting effort) and originality (differentiation). Adopting AI requires a fixed fee but lowers the marginal cost of effort, while a novelty-weighted ranking algorithm rewards distinctiveness. For the empirically relevant case of a linear Tullock contest, we derive a closed-form adoption threshold \\(f^{\\dagger}(\\theta)\\propto v^{3/2}\\), show existence of equilibrium, and map three regimes: a scaled-output equilibrium in which all creators adopt AI and differentiation collapses, a craftsmanship equilibrium with zero AI take-up, and a mixed equilibrium featuring endogenous sorting by talent. Comparative statics reveal that a modest authenticity signal and a small originality subsidy jointly recover over 90% of the welfare lost when AI adoption costs fall by 80%—exactly the price shock OpenAI announced in June 2025. Policy simulations suggest that a revenue-neutral licence-and-subsidy scheme raises surplus by 3.1% and lowers the Gini coefficient on creator earnings from 0.46 to 0.41, outperforming Pigovian hashtag levies or hard posting caps."
   },
   {
     "objectID": "teaching/index.html",

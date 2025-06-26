@@ -2,13 +2,13 @@
 title: "Research"
 subtitle: "All of my published and unpublished research projects. Click on each project to learn more."
 listing:
-  - id: work-in-progress
+  - id: publications
     type: default
     template: ../custom/research-listings.ejs
     categories: true
-    fields: [title, author, categories]
+    fields: [image, date, title, author, categories]
     contents:
-      - "work-in-progress/**/*.qmd"
+      - "published-papers/**/*.qmd"
     exclude:
       title: "Placeholder"
   - id: working-papers
@@ -20,32 +20,22 @@ listing:
       - "working-papers/**/*.qmd"
     exclude:
       title: "Placeholder"
-  - id: published-papers
+  - id: work-in-progress
     type: default
     template: ../custom/research-listings.ejs
     categories: true
-    fields: [image, date, title, author, categories]
+    fields: [title, author, categories]
     contents:
-      - "published-papers/**/*.qmd"
-    exclude:
-      title: "Placeholder"
-  - id: other-research
-    type: default
-    template: ../custom/research-listings.ejs
-    categories: true
-    fields: [image, date, title, author, categories]
-    contents:
-      - "other-research/**/*.qmd"
+      - "work-in-progress/**/*.qmd"
     exclude:
       title: "Placeholder"
 page-layout: full
 title-block-banner: true
 ---
 
+## Publications
 
-## Work in Progress
-
-:::{#work-in-progress}
+:::{#published-papers}
 :::
 
 ## Working Papers
@@ -53,13 +43,8 @@ title-block-banner: true
 :::{#working-papers}
 :::
 
-## Published Papers
+## Work in Progress
 
-:::{#published-papers}
+:::{#work-in-progress}
 :::
 
-
-## Other Research
-
-:::{#other-research}
-:::

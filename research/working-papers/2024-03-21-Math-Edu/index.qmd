@@ -1,0 +1,30 @@
+---
+title: "Long-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms"
+subtitle: "How does childhood mathematical education affect adults' consumption behavior."
+author: 
+  - Felicia Nguyen
+  - David Schweidel
+# date:
+categories: ["Public Policy", "Causal Inference"]
+# image: 
+pdf-url: ./working-papers/2024-03-21-Math-Edu/MathLiteracyDraft.pdf
+# external-url:
+# external-name:
+# citation:
+#   type: article-journal
+#   container-title: 
+#   volume: 
+#   issue:
+#   page-first:
+#   issn:
+#   doi:
+page-layout: full
+title-block-banner: true
+comments:
+  utterances:
+    repo: fphng/mywebsite
+---
+
+# Abstract
+
+This study investigates the impact of high school mathematics education on the financial behavior of individuals in later life. To assess this relationship, we employ a staggered treatment robust event study design that exploits variations in the requirements of high school math coursework across several US states following a series of curricular reforms in the late 1980s. Our findings indicate that increasing the required level of mathematical education has a significant impact on various aspects of financial behavior in adulthood. Specifically, we observe a reduction of up to 15.4\% in monthly spending on packaged goods and a corresponding increase of over 25\% in the use of coupons. These effects are robust to potential biases arising from staggered adoption or temporal and spatial correlations. In addition, our analyses demonstrate that the results vary between demographic groups, with a more pronounced effect among minorities. We also observe that the impact of high school math education on financial behavior persists with age, even though the magnitude of the effects may decrease. Further, our study provides evidence of the role of mathematical literacy in shaping consumers' responses to economic crises. Treated households exhibited an increase in the uptake of coupons and price promotions following the Great Recession of 2008. Overall, our study highlights the important role of high school mathematics education in shaping financial behavior in adulthood and sheds light on the potential benefits of enhancing mathematical literacy among the population.
