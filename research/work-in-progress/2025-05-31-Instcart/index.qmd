@@ -1,0 +1,30 @@
+---
+title: "Latent–Gaussian Distributional Synthetic Control for Unstructured Marketing Content"
+subtitle: "A high dimensional extension of the very interesting Distributional Synthetic Control method."
+author: 
+  - name: "Felicia Nguyen"
+    email: phuc.hung.nguyen@emory.edu
+    affiliation:
+      - name: "Goizueta Business School"
+      - name: "Emory University"
+# date:
+categories: ["AI", "Deep Learning", "Causal Inference"]
+# image: 
+# pdf-url: 
+# external-url:
+# external-name:
+# citation:
+#   type: article-journal
+#   container-title: 
+#   volume: 
+#   issue:
+#   page-first:
+#   issn:
+#   doi:
+page-layout: full
+title-block-banner: true
+---
+
+# Abstract
+
+Traditional synthetic‐control estimators recover mean‐level treatment effects by constructing a weighted combination of control units that best reproduces the pre‐treatment trajectory of a treated unit. **Distributional Synthetic Control** (Gunsilius, 2023) generalizes this idea to the *entire outcome distribution* by replacing squared‐error fit with optimal‐transport discrepancy between empirical distribution functions. Yet existing implementations assume scalar outcomes such as wages or sales. We develop a new Latent–Gaussian DiSC (LG‑DiSC) that brings distributional causal analysis to **unstructured text** and other high‐volume digital outputs pervasive in quantitative marketing. We embed every document in a low‐dimensional latent space using a Variational Auto‑Encoder (VAE), summarize each period’s latent codes by a single multivariate Gaussian, and exploit the closed‐form Wasserstein‑2 distance and barycenter between Gaussian measures. The approach preserves DiSC’s identification logic, runs in seconds on millions of documents, and, with a decoder, generates counterfactual text for substantive interpretation. We derive consistency and asymptotic normality of the weight estimator, quantify approximation error from the Gaussian sketch, and validate operating characteristics in simulation.

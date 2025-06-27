@@ -31,24 +31,22 @@ listing:
       title: "Placeholder"
 page-layout: full
 title-block-banner: true
-header-includes: >
-  <link rel="stylesheet" href="../_assets/listing-default.css">
+header-includes: <link rel="stylesheet" href="../_assets/listing-default.css">
 resources:
   - ../_assets/listing-default.css
 ---
 
 ## Publications
 
-:::{#published-papers}
+::: {#published-papers}
 :::
 
 ## Working Papers
 
-:::{#working-papers}
+::: {#working-papers}
 :::
 
 ## Work in Progress
 
-:::{#work-in-progress}
+::: {#work-in-progress}
 :::
-
