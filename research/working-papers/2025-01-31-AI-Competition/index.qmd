@@ -35,28 +35,26 @@ comments:
 
 # Abstract
 
-Generative artificial intelligence (AI) has collapsed the marginal cost of producing social-media content, raising concern that low-quality “AI spam’’ could flood user feeds and depress creator wages.  We build a two-lever contest model in which each creator chooses both *scale* (posting effort) and *originality* (differentiation).  Adopting AI requires a fixed fee but lowers the marginal cost of effort, while a novelty-weighted ranking algorithm rewards distinctiveness.  For the empirically relevant case of a linear Tullock contest, we derive a closed-form adoption threshold $f^{\dagger}(\theta)\propto v^{3/2}$, show existence of equilibrium, and map three regimes: a **scaled-output equilibrium** in which all creators adopt AI and differentiation collapses, a **craftsmanship equilibrium** with zero AI take-up, and a **mixed equilibrium** featuring endogenous sorting by talent.  Comparative statics reveal that a modest authenticity signal and a small originality subsidy jointly recover over 90\% of the welfare lost when AI adoption costs fall by 80\%—exactly the price shock OpenAI announced in June 2025. Policy simulations suggest that a revenue-neutral licence-and-subsidy scheme raises surplus by 3.1\% and lowers the Gini coefficient on creator earnings from 0.46 to 0.41, outperforming Pigovian hashtag levies or hard posting caps.
+Generative artificial intelligence (AI) has collapsed the marginal cost of producing social-media content, raising concern that low-quality “AI spam’’ could flood user feeds and depress creator wages. We build a two-lever contest model in which each creator chooses both *scale* (posting effort) and *originality* (differentiation). Adopting AI requires a fixed fee but lowers the marginal cost of effort, while a novelty-weighted ranking algorithm rewards distinctiveness. For the empirically relevant case of a linear Tullock contest, we derive a closed-form adoption threshold $f^{\dagger}(\theta)\propto v^{3/2}$, show existence of equilibrium, and map three regimes: a **scaled-output equilibrium** in which all creators adopt AI and differentiation collapses, a **craftsmanship equilibrium** with zero AI take-up, and a **mixed equilibrium** featuring endogenous sorting by talent. Comparative statics reveal that a modest authenticity signal and a small originality subsidy jointly recover over 90% of the welfare lost when AI adoption costs fall by 80%—exactly the price shock OpenAI announced in June 2025. Policy simulations suggest that a revenue-neutral licence-and-subsidy scheme raises surplus by 3.1% and lowers the Gini coefficient on creator earnings from 0.46 to 0.41, outperforming Pigovian hashtag levies or hard posting caps.
 
 # Summary
 
 ## Overview
 
-*Generative-AI has slashed the time-cost of posting.*  
-Platforms fear “feed spam”, creators fear revenue erosion, and regulators
-care about authenticity.  
-We build a Tullock-style **attention contest** to quantify these trade-offs
-and study three real-world shocks:
+*Generative-AI has slashed the time-cost of posting.*\
+Platforms fear “feed spam”, creators fear revenue erosion, and regulators care about authenticity.\
+We build a Tullock-style **attention contest** to quantify these trade-offs and study three real-world shocks:
 
-1. **OpenAI’s 80 % price cut** (fixed AI fee ↓)  
-2. **EU “AI-generated” transparency labels** (novelty weight λ ↑)  
-3. **An originality subsidy fund** (differentiation cost c<sub>δ</sub> ↓)
+1.  **OpenAI’s 80 % price cut** (fixed AI fee ↓)\
+2.  **EU “AI-generated” transparency labels** (novelty weight λ ↑)\
+3.  **An originality subsidy fund** (differentiation cost c<sub>δ</sub> ↓)
 
----
+------------------------------------------------------------------------
 
 ## Model at a glance
 
 | Symbol | Meaning | Notes |
-|--------|---------|-------|
+|------------------------|---------------------------|---------------------|
 | $e_i$ | Effort (posting frequency) | Continuous, chosen after adoption |
 | $\delta_i$ | Differentiation / authenticity | Costly but boosts novelty score |
 | $A_i\in\{0,1\}$ | AI adoption | Pays fixed fee $f$; lowers $c_e$ |
@@ -76,8 +74,7 @@ e_i^{\star} \;=\; \frac{v(\delta_i,\theta_i)\,g(\delta_i;\bar\delta)}
 W=\int_0^1 e_j g_j\,dj .
 $$
 
-
-### Adoption threshold  
+### Adoption threshold
 
 AI is profitable for talent $\theta$ when
 
@@ -90,70 +87,59 @@ $$
 
 Monotonicity in $\theta$ delivers a single cut-off $\hat\theta$.
 
----
+------------------------------------------------------------------------
 
 ## Equilibrium regimes (γ = 1)
 
-* **Scaled-output:** cheap AI ($f$ low) ⇒ everyone adopts, sets
-  $\delta=0$, floods the feed.
-* **Craftsmanship:** expensive AI ($f$ high) ⇒ nobody adopts, creators
-  invest in authenticity.
-* **Mixed:** interior $f$ ⇒ high-talent adopt, low-talent remain
-  “hand-made”; equilibrium talent cut-off $\hat\theta$.
+-   **Scaled-output:** cheap AI ($f$ low) ⇒ everyone adopts, sets $\delta=0$, floods the feed.
+-   **Craftsmanship:** expensive AI ($f$ high) ⇒ nobody adopts, creators invest in authenticity.
+-   **Mixed:** interior $f$ ⇒ high-talent adopt, low-talent remain “hand-made”; equilibrium talent cut-off $\hat\theta$.
 
----
+------------------------------------------------------------------------
 
 ## Welfare experiment (one-platform)
 
-| Scenario | Welfare $\mathcal{W} $ | Adopt % | Mean $ \bar{\delta} $ |
-|----------|--------------------------|---------|-----------------------|
+| Scenario | Welfare \$\mathcal{W} \$ | Adopt % | Mean \$ \bar{\delta} \$ |
+|--------------|-----------------------|--------------|--------------------|
 | Baseline | **1.000** | 47 % | 0.000 |
 | OpenAI price cut ($f\!\downarrow$) | 0.916 | 86 % | −0.036 |
-| + EU transparency ($\lambda\!\uparrow$) | 0.954 | 86 % | +0.012 |
-| + originality subsidy ($c_\delta\!\downarrow$) | **0.994** | 83 % | +0.023 |
+| \+ EU transparency ($\lambda\!\uparrow$) | 0.954 | 86 % | +0.012 |
+| \+ originality subsidy ($c_\delta\!\downarrow$) | **0.994** | 83 % | +0.023 |
 
-*Price shock erodes welfare; labels partly restore it; originality fund
-closes >90 % of the gap.*
+*Price shock erodes welfare; labels partly restore it; originality fund closes \>90 % of the gap.*
 
----
+------------------------------------------------------------------------
 
 ## Managerial & policy insights
 
-* **Platforms:** a small novelty bump ($+5 \% \lambda$) **beats** hard
-  rate-limits at raising welfare while preserving engagement.
-* **Creators:** square-root intuition is wrong under $\gamma=1$; optimal
-  posting rises *linearly* with monetised value and falls with global
-  weight $W$.
-* **Regulators:** transparency mandates are *complements*, not substitutes,
-  to originality subsidies.
-* **Brands:** owning an always-AI avatar raises denominator $W$ and can
-  backfire on reach unless paired with high-$\delta$ creative spend.
+-   **Platforms:** a small novelty bump ($+5 \% \lambda$) **beats** hard rate-limits at raising welfare while preserving engagement.
+-   **Creators:** square-root intuition is wrong under $\gamma=1$; optimal posting rises *linearly* with monetised value and falls with global weight $W$.
+-   **Regulators:** transparency mandates are *complements*, not substitutes, to originality subsidies.
+-   **Brands:** owning an always-AI avatar raises denominator $W$ and can backfire on reach unless paired with high-$\delta$ creative spend.
 
----
+------------------------------------------------------------------------
 
 ## Extensions
 
-### Multi-platform & multihoming  
-Creators allocate effort $e_{ip}$ across $P$ platforms and pay a
-per-platform overhead $\phi_p$.  A low-$\lambda_p$ rival draws spam,
-raising own-platform welfare when exclusivity bonuses are too small.
+### Multi-platform & multihoming
 
-### Brand-owned AI avatars  
-Inject a mass $M_{\text{brand}}$ with $A=1$.  
-Welfare derivative w.r.t.$M_{\text{brand}}$ is negative unless labels
-($\lambda\uparrow$) or creative spend ($\delta\uparrow$) offset the
-denominator shock.
+Creators allocate effort $e_{ip}$ across $P$ platforms and pay a per-platform overhead $\phi_p$. A low-$\lambda_p$ rival draws spam, raising own-platform welfare when exclusivity bonuses are too small.
 
----
+### Brand-owned AI avatars
+
+Inject a mass $M_{\text{brand}}$ with $A=1$.\
+Welfare derivative w.r.t.$M_{\text{brand}}$ is negative unless labels ($\lambda\uparrow$) or creative spend ($\delta\uparrow$) offset the denominator shock.
+
+------------------------------------------------------------------------
 
 ## Key take-aways
 
 *Cheap AI alone destroys rents; authenticity levers restore them at low.*
 
-1. **Adoption arms race** is inevitable after a deep cost shock.
+1.  **Adoption arms race** is inevitable after a deep cost shock.
 
-2. **Label + subsidy** bundle dominates blunt throttling.
+2.  **Label + subsidy** bundle dominates blunt throttling.
 
-3. **Low-cost avatars** force mid-talent humans to adopt AI unless platforms reward novelty more strongly.
+3.  **Low-cost avatars** force mid-talent humans to adopt AI unless platforms reward novelty more strongly.
 
----
+------------------------------------------------------------------------
