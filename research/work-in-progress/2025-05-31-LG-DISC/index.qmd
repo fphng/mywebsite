@@ -1,8 +1,12 @@
 ---
-title: "Latent–Gaussian Distributional Synthetic Control for Unstructured Marketing Conten"
+title: "Latent–Gaussian Distributional Synthetic Control for Unstructured Marketing Content"
 subtitle: "A high dimensional extension of the very interesting Distributional Synthetic Control method."
 author: 
-  - Felicia Nguyen
+  - name: "Felicia Nguyen"
+    email: phuc.hung.nguyen@emory.edu
+    affiliation:
+      - name: "Goizueta Business School"
+      - name: "Emory University"
 # date:
 categories: ["AI", "Deep Learning", "Causal Inference"]
 # image: 

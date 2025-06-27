@@ -18,11 +18,10 @@ about:
       href: mailto:phuc.hung.nguyen@emory.edu
     - icon: file-earmark-person
       text: CV
-      href: static-content/CV.pdf
+      href: CV/CV.pdf
       target: _blank
 ---
 
-I'm a PhD Candidate at Emory University. I'll be on the 
-job market 2025-2026. In my research, I combine causal inference and deep learning to answer questions related to digital content strategy and platform design.
+I'm a PhD Candidate at [Emory University](https://goizueta.emory.edu/). I'll be on the job market for 2025-2026 year. In my research, I combine causal inference and deep learning to answer questions related to digital content strategy and platform design.
 
-
+[**Learn more about me &rarr;**](/about)

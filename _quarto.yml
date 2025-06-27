@@ -2,24 +2,24 @@ project:
   type: website
 
 website:
-  title: "Felicia Nguyen"
+  title: "FELICIA NGUYEN"
   favicon: static-content/logo/logo-32x32.png
   navbar:
     logo: static-content/logo/logo.svg
-    left:
+    right:
       - href: about.qmd
-        text: About
+        text: ABOUT
       - href: research/index.qmd
-        text: Research
+        text: RESEARCH
       - href: blog/index.qmd
-        text: Blog       
+        text: BLOG       
       #- href: teaching/index.qmd
       #  text: Teaching
       - href: CV/index.qmd
         text: CV
     toggle-position: "right"
   page-footer:
-    left: "F. Nguyen (2025)"
+    left: "From Atlanta with 💖"
     center: © 2025  &middot; Created with [![](https://quarto.org/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org/) .
     right:
       - href: https://github.com/fphng
@@ -27,8 +27,8 @@ website:
 format:
   html:
     theme: 
-      - minty
-      - custom-theme.scss
+      - Pulse
+      - custom-theme.scss 
     toc: true
 
 editor: visual
