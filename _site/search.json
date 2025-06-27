@@ -25,14 +25,14 @@
     "href": "research/index.html#working-papers",
     "title": "Research",
     "section": "Working Papers",
-    "text": "Working Papers\n\n\n\n\n  \n\n  \n\n      \n      \n          \n            Long-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms\n          \n          How does childhood mathematical education affect adults' consumption behavior.\n\n          \n            \n            \n            \n            \n               Felicia Nguyen, David Schweidel.  \n            \n            \n            \n            \n              PDF\n            \n          \n          \n\n      \n\n  \n  \n\n  \n\n      \n      \n          \n            Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content\n          \n          How does Generative AI affect Content Strategy, and what can platforms do?\n\n          \n            \n            \n            \n            \n               Felicia Nguyen.  \n            \n            \n            \n            \n          \n          \n\n      \n\n  \n  \n\n\nNo matching items"
+    "text": "Working Papers\n\n\n\n\n\nLong-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms\n\n\n\nPublic Policy\n\nCausal Inference\n\n\n\n\n\n\nFelicia Nguyen, David Schweidel\n\n\n\n\n\n\n\nScale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content\n\n\n\nAI\n\nContent Strategy\n\nTheory\n\n\n\n\n\n\nFelicia Nguyen, David Schweidel\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "research/index.html#work-in-progress",
     "href": "research/index.html#work-in-progress",
     "title": "Research",
     "section": "Work in Progress",
-    "text": "Work in Progress\n\n\n\n\n  \n\n  \n\n      \n      \n          \n            Latent–Gaussian Distributional Synthetic Control for Unstructured Marketing Conten\n          \n          A high dimensional extension of the very interesting Distributional Synthetic Control method.\n\n          \n            \n            \n            \n            \n               Felicia Nguyen.  \n            \n            \n            \n            \n          \n          \n\n      \n\n  \n  \n\n\nNo matching items"
+    "text": "Work in Progress\n\n\n\n\n\nLatent–Gaussian Distributional Synthetic Control for Unstructured Marketing Content\n\n\n\nAI\n\nDeep Learning\n\nCausal Inference\n\n\n\n\n\n\nFelicia Nguyen\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "CV/index.html",
@@ -51,16 +51,23 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Hi, I’m Felicia! 👋",
     "section": "",
-    "text": "I grew up in the beautiful riverside town of Hoi An, Vietnam.\nI spent my high school years in nearby Da Nang City, attending Le Qui Don High School for the Gifted, where I specialized in Chemistry, and stumbled my way into getting an National Olympiad in Informatics Gold medal.\nFor college, I went to Foreign Trade University in Ho Chi Minh City, where I studied Economics and International Business.\nAfterwards, I spent two years in the Fintech sector, where I spearheaded the development of one of the earliest banking chatbots in Southeast Asia, which allowed customers to apply and manage their loans and credit cards with ease via Facebook Messenger, Whatsapp, and other messaging platforms, using natural language.\nI moved to the US in 2017 to pursue my MBA/MS.in Marketing Analytics at the AC Nielsen Center for Marketing Research at the University of Wisconsin-Madison, and then down south to Atlanta for my Ph.D. in Quantitative Marketing at Emory University."
+    "text": "I grew up in the beautiful town of Hoi An, an ancient trading port in central Vietnam.\nI spent my high school years in nearby Da Nang City, attending Le Qui Don High School for the Gifted, where I specialized in Chemistry, and stumbled my way into getting an National Olympiad in Informatics Gold medal.\nFor college, I went to Foreign Trade University in Ho Chi Minh City, where I studied Economics and International Business.\nAfterwards, I spent two years in the Fintech sector, where I spearheaded the development of one of the earliest banking chatbots in Southeast Asia, which allowed customers to apply and manage their loans and credit cards with ease via Facebook Messenger, Whatsapp, and other messaging platforms, using natural language.\nI moved to the US in 2017 to pursue my MBA/MS.in Marketing Analytics at the AC Nielsen Center for Marketing Research at the University of Wisconsin-Madison, and then down south to Atlanta for my Ph.D. in Quantitative Marketing at Emory University."
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
-    "title": "About",
+    "title": "Hi, I’m Felicia! 👋",
     "section": "Education",
-    "text": "Education\nPh.D in Marketing Emory University | Atlanta, GA\nM.S. in Business Analytics University of Wisconsin-Madison | Madison, WI"
+    "text": "Education\n\nPh.D in Marketing, 2026\n\nEmory University, Atlanta, GA\n\nM.S. in Business Analytics, 2020\n\nUniversity of Wisconsin-Madison, Madison, WI\n\nB.S. in Economics, 2015\n\nForeign Trade University, Vietnam"
+  },
+  {
+    "objectID": "about.html#interests",
+    "href": "about.html#interests",
+    "title": "Hi, I’m Felicia! 👋",
+    "section": "Interests",
+    "text": "Interests\n\nDeep Learning\nCausal Inference\nPlatform Design\nPlaying W/ My Cats\nTabletop Games\nFantasy/Scifi\nProducing Music"
   },
   {
     "objectID": "blog/posts/Draft_WebsiteBuild/index.html",
@@ -144,7 +151,7 @@
     "href": "index.html",
     "title": "Felicia Nguyen",
     "section": "",
-    "text": "I’m a PhD Candidate at Emory University. I’ll be on the job market 2025-2026. In my research, I combine causal inference and deep learning to answer questions related to digital content strategy and platform design."
+    "text": "I’m a PhD Candidate at Emory University. I’ll be on the job market for 2025-2026 year. In my research, I combine causal inference and deep learning to answer questions related to digital content strategy and platform design.\nLearn more about me →"
   },
   {
     "objectID": "research/other-research/placeholder/index.html",
@@ -156,7 +163,7 @@
   {
     "objectID": "research/work-in-progress/2025-05-31-LG-DISC/index.html",
     "href": "research/work-in-progress/2025-05-31-LG-DISC/index.html",
-    "title": "Latent–Gaussian Distributional Synthetic Control for Unstructured Marketing Conten",
+    "title": "Latent–Gaussian Distributional Synthetic Control for Unstructured Marketing Content",
     "section": "",
     "text": "Abstract\nTraditional synthetic‐control estimators recover mean‐level treatment effects by constructing a weighted combination of control units that best reproduces the pre‐treatment trajectory of a treated unit. Distributional Synthetic Control (Gunsilius, 2023) generalizes this idea to the entire outcome distribution by replacing squared‐error fit with optimal‐transport discrepancy between empirical distribution functions. Yet existing implementations assume scalar outcomes such as wages or sales. We develop a new Latent–Gaussian DiSC (LG‑DiSC) that brings distributional causal analysis to unstructured text and other high‐volume digital outputs pervasive in quantitative marketing. We embed every document in a low‐dimensional latent space using a Variational Auto‑Encoder (VAE), summarize each period’s latent codes by a single multivariate Gaussian, and exploit the closed‐form Wasserstein‑2 distance and barycenter between Gaussian measures. The approach preserves DiSC’s identification logic, runs in seconds on millions of documents, and, with a decoder, generates counterfactual text for substantive interpretation. We derive consistency and asymptotic normality of the weight estimator, quantify approximation error from the Gaussian sketch, and validate operating characteristics in simulation."
   },

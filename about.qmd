@@ -1,5 +1,5 @@
 ---
-title: "Hi, I'm Felicia!"
+title: "Hi, I'm Felicia! 👋"
 subtitle: "A little bit about myself."
 about:
   template: trestles
@@ -18,13 +18,13 @@ about:
       href: mailto:phuc.hung.nguyen@emory.edu
     - icon: file-earmark-person
       text: CV
-      href: static-content/CV.pdf
+      href: CV/CV.pdf
       target: _blank
 page-layout: full
 title-block-banner: true
 ---
 
-I grew up in the beautiful riverside town of Hoi An, Vietnam.
+I grew up in the beautiful town of [Hoi An](https://en.wikipedia.org/wiki/H%E1%BB%99i_An), an ancient trading port in central Vietnam.
 
 I spent my high school years in nearby Da Nang City, attending Le Qui Don High School for the Gifted, where I specialized in Chemistry, and stumbled my way into getting an National Olympiad in Informatics Gold medal.
 
@@ -34,8 +34,35 @@ Afterwards, I spent two years in the Fintech sector, where I spearheaded the dev
 
 I moved to the US in 2017 to pursue my MBA/MS.in Marketing Analytics at the AC Nielsen Center for Marketing Research at the University of Wisconsin-Madison, and then down south to Atlanta for my Ph.D. in Quantitative Marketing at Emory University.
 
+:::: {.grid}
+
+::: {.g-col-12 .g-col-md-8 style="text-align: left;"}
 ## Education
 
-**Ph.D in Marketing** Emory University \| Atlanta, GA
+- **Ph.D in Marketing**, *2026*
 
-**M.S. in Business Analytics** University of Wisconsin-Madison \| Madison, WI
+*Emory University, Atlanta, GA*
+
+- **M.S. in Business Analytics**, *2020*
+
+*University of Wisconsin-Madison, Madison, WI*
+
+- **B.S. in Economics**, *2015*
+
+*Foreign Trade University, Vietnam*
+:::
+
+::: {.g-col-12 .g-col-md-4 style="text-align: left;"}
+## Interests
+
+- Deep Learning
+- Causal Inference
+- Platform Design
+- Playing W/ My Cats
+- Tabletop Games
+- Fantasy/Scifi
+- Producing Music
+:::
+
+::::
+

@@ -2,7 +2,16 @@
 title: "Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content"
 subtitle: "How does Generative AI affect Content Strategy, and what can platforms do?"
 author: 
-  - Felicia Nguyen
+  - name: "Felicia Nguyen"
+    email: phuc.hung.nguyen@emory.edu
+    affiliation:
+      - name: "Goizueta Business School"
+      - name: "Emory University"
+  - name: "David Schweidel"
+    email: dschweidel@emory.edu
+    affiliation:
+      - name: "Goizueta Business School"
+      - name: "Emory University"
 # date:
 categories: ["AI", "Content Strategy", "Theory"]
 # image: 
@@ -19,6 +28,9 @@ pdf-url: ./working-papers/2025-01-31-AI-Competition/AI_Competition.pdf
 #   doi:
 page-layout: full
 title-block-banner: true
+comments:
+  utterances:
+    repo: fphng/mywebsite
 ---
 
 # Abstract

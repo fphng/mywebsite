@@ -7,7 +7,7 @@ date-modified: last-modified
 categories: [Workflow]
 comments:
   utterances:
-    repo: quarto-dev/quarto-docs
+    repo: fphng/mywebsite
 ---
 
 There's tons of resources out there for how to built a personal website as an academic, made by folks with actual expertise in web design, coding, etc.

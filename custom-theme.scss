@@ -2,8 +2,11 @@
 /* set the navbar background and text color */
 $navbar-bg: #002878 !default;   /* whatever hex you like */
 $navbar-fg: #fcfcfc !default;   /* ensure good contrast */
-
-
+// Define new “badge” color tokens
+$category-bg:        #d28e00 !default;
+$category-color:     #ffffff !default;
+// (no Sass variable for title color by default; but you can define your own)
+$title-color: #d28e00 !default;
 /* un-visited link color */
 $link-color:      #d28e00 !default;
 
@@ -18,16 +21,28 @@ $link-active-color:   #d28e00 !default;
 /*-- scss:defaults --*/
 
 /* change the “brand” color that powers .btn-primary, links, etc */
-$primary:            #d28e00 !default;
+$primary:            #002878 !default;
 
 /* adjust the contrasting text color on .btn-primary */
 $primary-contrast:   #ffffff !default;
 
 /* you can also tweak secondary, success, danger, etc */
-$secondary:          #002878 !default;
+$secondary:          #d28e00 !default;
 $secondary-contrast: #ffffff !default;
 
 /*-- scss:rules --*/
+.bi,        /* Bootstrap Icons */
+.fas,       /* FontAwesome Solid */
+.far,       /* FontAwesome Regular */
+.fab {      /* FontAwesome Brands */
+  color:     #002878;      /* your desired icon color */
+}
+
+/* you can also tweak hover/focus states */
+.bi:hover,
+.fas:hover {
+  color: darken(#336699, 10%);
+}
 
 /* if you need finer control, e.g. hover states: */
 .btn-primary:hover,
@@ -35,3 +50,56 @@ $secondary-contrast: #ffffff !default;
   background-color: darken($primary, 10%);
   border-color:   darken($primary, 12%);
 }
+
+.quarto-title .quarto-categories .quarto-category {
+  background-color: $category-bg;
+  color:            $category-color;
+}
+
+.quarto-title-banner h1 {
+  color: #d28e00;
+}
+
+div.quarto-post .listing-categories .listing-category {
+    color: #ffffff !important;
+    background-color:#d28e00; 
+    font-family: Monospace; // monospace
+    margin-right: 4px;
+    margin-top: 4px;
+}
+
+div.quarto-post .metadata {
+    font-size: large;
+}
+/*-- scss:defaults --*/
+/* import the Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* override Bootstrap’s base font so it trickles into navbar too */
+$font-family-nav: 'Lato', sans-serif !default;
+
+/*-- scss:rules --*/
+/* optional extra specificity for navbar */
+// .navbar,
+// .navbar-brand,
+// .navbar-nav .nav-link {
+//   font-family: $font-family-nav;
+// }
+
+.navbar-brand {
+  color: #d28e00;
+}
+
+.title-block .title-block-title {
+  color: #d28e00 !important;
+}
+
+/* ——— Badges / Tags ——— */
+/* badge background (for .badge and .badge-*) */
+$badge-bg:          #ffffff !default;
+/* badge text color */
+$badge-color:       #002878 !default;
+
+/* optionally override specific variants */
+$badge-primary-bg:  #970101 !default;
+$badge-success-bg:  #00ad6b !default;

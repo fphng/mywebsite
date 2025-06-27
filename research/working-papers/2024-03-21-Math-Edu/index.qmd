@@ -2,8 +2,16 @@
 title: "Long-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms"
 subtitle: "How does childhood mathematical education affect adults' consumption behavior."
 author: 
-  - Felicia Nguyen
-  - David Schweidel
+  - name: "Felicia Nguyen"
+    email: phuc.hung.nguyen@emory.edu
+    affiliation:
+      - name: "Goizueta Business School"
+      - name: "Emory University"
+  - name: "David Schweidel"
+    email: dschweidel@emory.edu
+    affiliation:
+      - name: "Goizueta Business School"
+      - name: "Emory University"
 # date:
 categories: ["Public Policy", "Causal Inference"]
 # image: 
