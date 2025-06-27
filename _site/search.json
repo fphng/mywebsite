@@ -11,7 +11,49 @@
     "href": "research/working-papers/2024-03-21-Math-Edu/index.html",
     "title": "Long-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms",
     "section": "",
-    "text": "Abstract\nThis study investigates the impact of high school mathematics education on the financial behavior of individuals in later life. To assess this relationship, we employ a staggered treatment robust event study design that exploits variations in the requirements of high school math coursework across several US states following a series of curricular reforms in the late 1980s. Our findings indicate that increasing the required level of mathematical education has a significant impact on various aspects of financial behavior in adulthood. Specifically, we observe a reduction of up to 15.4% in monthly spending on packaged goods and a corresponding increase of over 25% in the use of coupons. These effects are robust to potential biases arising from staggered adoption or temporal and spatial correlations. In addition, our analyses demonstrate that the results vary between demographic groups, with a more pronounced effect among minorities. We also observe that the impact of high school math education on financial behavior persists with age, even though the magnitude of the effects may decrease. Further, our study provides evidence of the role of mathematical literacy in shaping consumers’ responses to economic crises. Treated households exhibited an increase in the uptake of coupons and price promotions following the Great Recession of 2008. Overall, our study highlights the important role of high school mathematics education in shaping financial behavior in adulthood and sheds light on the potential benefits of enhancing mathematical literacy among the population."
+    "text": "This study investigates the impact of high school mathematics education on the financial behavior of individuals in later life. To assess this relationship, we employ a staggered treatment robust event study design that exploits variations in the requirements of high school math coursework across several US states following a series of curricular reforms in the late 1980s. Our findings indicate that increasing the required level of mathematical education has a significant impact on various aspects of financial behavior in adulthood. Specifically, we observe a reduction of up to 15.4% in monthly spending on packaged goods and a corresponding increase of over 25% in the use of coupons. These effects are robust to potential biases arising from staggered adoption or temporal and spatial correlations. In addition, our analyses demonstrate that the results vary between demographic groups, with a more pronounced effect among minorities. We also observe that the impact of high school math education on financial behavior persists with age, even though the magnitude of the effects may decrease. Further, our study provides evidence of the role of mathematical literacy in shaping consumers’ responses to economic crises. Treated households exhibited an increase in the uptake of coupons and price promotions following the Great Recession of 2008. Overall, our study highlights the important role of high school mathematics education in shaping financial behavior in adulthood and sheds light on the potential benefits of enhancing mathematical literacy among the population.\n\n\n\n\n\nThis paper studies how raising high-school mathematics requirements during the wave of state curricular reforms that followed A Nation at Risk (1983) shaped consumers’ long-run saving-related behaviors. Leveraging staggered adoption across states and graduation cohorts, the author links graduates’ math exposure to later household-level scanner data on grocery purchases, documenting sizeable and persistent shifts toward more price-conscious shopping.\n\n\n\nThe core sample contains roughly 680 000 “stayer” households followed by Nielsen from 2004 onward, whose birth and current states can be matched to the timing of reforms. Four monthly outcomes proxy for saving behavior: share of purchases made on sale, coupon utilization rate, private-label share, and log spending. Identification rests on a staggered Difference-in-Differences design, implemented with Sun & Abraham’s (2021) event-study correction and cross-checked by Generalized Synthetic Control and doubly robust estimators.\n\n\n\nAccounting for staggered timing more than doubles the estimated effect of reform on the purchase-on-sale share, from 1.21 pp to 2.54 pp. Coupon use rises by about 0.7 pp—roughly a 26% increase over baseline usage . Most strikingly, monthly packaged-goods expenditure falls by 15.4 %, or about $62 on a $400 base. Household-level specifications confirm positive but slightly attenuated effects once finer fixed effects absorb additional variation.\n\n\n\nReform effects amplify during adverse macro shocks: after the 2008 Great Recession, treated households intensified couponing and bargain hunting, while the spending reduction became less pronounced. Treatment impacts are largest for minority (Asian and Black) households on coupon use and private-label share, and peak for middle-income families ($60–100k), with unexpected attenuation at the very bottom of the income.\n\n\n\nPlacebo shifts in treatment timing, models with state-specific trends, Generalized Synthetic Control, and Callaway-Sant’Anna doubly robust estimators all yield qualitatively similar patterns, alleviating concerns over differential trends or spatial correlation.\n\n\n\nFindings imply that strengthening quantitative curricula not only benefits labor-market outcomes but also cultivates consumers who plan ahead, exploit discounts, and exhibit greater financial resilience during downturns. Retailers may anticipate higher coupon redemption and promotion sensitivity in markets with stronger math education, while policymakers gain additional evidence that math literacy promotes household welfare through everyday economic decisions."
+  },
+  {
+    "objectID": "research/working-papers/2024-03-21-Math-Edu/index.html#overview",
+    "href": "research/working-papers/2024-03-21-Math-Edu/index.html#overview",
+    "title": "Long-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms",
+    "section": "",
+    "text": "This paper studies how raising high-school mathematics requirements during the wave of state curricular reforms that followed A Nation at Risk (1983) shaped consumers’ long-run saving-related behaviors. Leveraging staggered adoption across states and graduation cohorts, the author links graduates’ math exposure to later household-level scanner data on grocery purchases, documenting sizeable and persistent shifts toward more price-conscious shopping."
+  },
+  {
+    "objectID": "research/working-papers/2024-03-21-Math-Edu/index.html#data-identification",
+    "href": "research/working-papers/2024-03-21-Math-Edu/index.html#data-identification",
+    "title": "Long-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms",
+    "section": "",
+    "text": "The core sample contains roughly 680 000 “stayer” households followed by Nielsen from 2004 onward, whose birth and current states can be matched to the timing of reforms. Four monthly outcomes proxy for saving behavior: share of purchases made on sale, coupon utilization rate, private-label share, and log spending. Identification rests on a staggered Difference-in-Differences design, implemented with Sun & Abraham’s (2021) event-study correction and cross-checked by Generalized Synthetic Control and doubly robust estimators."
+  },
+  {
+    "objectID": "research/working-papers/2024-03-21-Math-Edu/index.html#key-findings",
+    "href": "research/working-papers/2024-03-21-Math-Edu/index.html#key-findings",
+    "title": "Long-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms",
+    "section": "",
+    "text": "Accounting for staggered timing more than doubles the estimated effect of reform on the purchase-on-sale share, from 1.21 pp to 2.54 pp. Coupon use rises by about 0.7 pp—roughly a 26% increase over baseline usage . Most strikingly, monthly packaged-goods expenditure falls by 15.4 %, or about $62 on a $400 base. Household-level specifications confirm positive but slightly attenuated effects once finer fixed effects absorb additional variation."
+  },
+  {
+    "objectID": "research/working-papers/2024-03-21-Math-Edu/index.html#heterogeneity-dynamics",
+    "href": "research/working-papers/2024-03-21-Math-Edu/index.html#heterogeneity-dynamics",
+    "title": "Long-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms",
+    "section": "",
+    "text": "Reform effects amplify during adverse macro shocks: after the 2008 Great Recession, treated households intensified couponing and bargain hunting, while the spending reduction became less pronounced. Treatment impacts are largest for minority (Asian and Black) households on coupon use and private-label share, and peak for middle-income families ($60–100k), with unexpected attenuation at the very bottom of the income."
+  },
+  {
+    "objectID": "research/working-papers/2024-03-21-Math-Edu/index.html#robustness",
+    "href": "research/working-papers/2024-03-21-Math-Edu/index.html#robustness",
+    "title": "Long-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms",
+    "section": "",
+    "text": "Placebo shifts in treatment timing, models with state-specific trends, Generalized Synthetic Control, and Callaway-Sant’Anna doubly robust estimators all yield qualitatively similar patterns, alleviating concerns over differential trends or spatial correlation."
+  },
+  {
+    "objectID": "research/working-papers/2024-03-21-Math-Edu/index.html#managerial-policy-implications",
+    "href": "research/working-papers/2024-03-21-Math-Edu/index.html#managerial-policy-implications",
+    "title": "Long-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms",
+    "section": "",
+    "text": "Findings imply that strengthening quantitative curricula not only benefits labor-market outcomes but also cultivates consumers who plan ahead, exploit discounts, and exhibit greater financial resilience during downturns. Retailers may anticipate higher coupon redemption and promotion sensitivity in markets with stronger math education, while policymakers gain additional evidence that math literacy promotes household welfare through everyday economic decisions."
   },
   {
     "objectID": "research/published-papers/placeholder/index.html",
@@ -172,7 +214,56 @@
     "href": "research/working-papers/2025-01-31-AI-Competition/index.html",
     "title": "Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content",
     "section": "",
-    "text": "Abstract\nGenerative artificial intelligence (AI) has collapsed the marginal cost of producing social-media content, raising concern that low-quality “AI spam’’ could flood user feeds and depress creator wages. We build a two-lever contest model in which each creator chooses both scale (posting effort) and originality (differentiation). Adopting AI requires a fixed fee but lowers the marginal cost of effort, while a novelty-weighted ranking algorithm rewards distinctiveness. For the empirically relevant case of a linear Tullock contest, we derive a closed-form adoption threshold \\(f^{\\dagger}(\\theta)\\propto v^{3/2}\\), show existence of equilibrium, and map three regimes: a scaled-output equilibrium in which all creators adopt AI and differentiation collapses, a craftsmanship equilibrium with zero AI take-up, and a mixed equilibrium featuring endogenous sorting by talent. Comparative statics reveal that a modest authenticity signal and a small originality subsidy jointly recover over 90% of the welfare lost when AI adoption costs fall by 80%—exactly the price shock OpenAI announced in June 2025. Policy simulations suggest that a revenue-neutral licence-and-subsidy scheme raises surplus by 3.1% and lowers the Gini coefficient on creator earnings from 0.46 to 0.41, outperforming Pigovian hashtag levies or hard posting caps."
+    "text": "Generative artificial intelligence (AI) has collapsed the marginal cost of producing social-media content, raising concern that low-quality “AI spam’’ could flood user feeds and depress creator wages. We build a two-lever contest model in which each creator chooses both scale (posting effort) and originality (differentiation). Adopting AI requires a fixed fee but lowers the marginal cost of effort, while a novelty-weighted ranking algorithm rewards distinctiveness. For the empirically relevant case of a linear Tullock contest, we derive a closed-form adoption threshold \\(f^{\\dagger}(\\theta)\\propto v^{3/2}\\), show existence of equilibrium, and map three regimes: a scaled-output equilibrium in which all creators adopt AI and differentiation collapses, a craftsmanship equilibrium with zero AI take-up, and a mixed equilibrium featuring endogenous sorting by talent. Comparative statics reveal that a modest authenticity signal and a small originality subsidy jointly recover over 90% of the welfare lost when AI adoption costs fall by 80%—exactly the price shock OpenAI announced in June 2025. Policy simulations suggest that a revenue-neutral licence-and-subsidy scheme raises surplus by 3.1% and lowers the Gini coefficient on creator earnings from 0.46 to 0.41, outperforming Pigovian hashtag levies or hard posting caps."
+  },
+  {
+    "objectID": "research/working-papers/2025-01-31-AI-Competition/index.html#overview",
+    "href": "research/working-papers/2025-01-31-AI-Competition/index.html#overview",
+    "title": "Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content",
+    "section": "Overview",
+    "text": "Overview\nGenerative-AI has slashed the time-cost of posting.\nPlatforms fear “feed spam”, creators fear revenue erosion, and regulators care about authenticity.\nWe build a Tullock-style attention contest to quantify these trade-offs and study three real-world shocks:\n\nOpenAI’s 80 % price cut (fixed AI fee ↓)\n\nEU “AI-generated” transparency labels (novelty weight λ ↑)\n\nAn originality subsidy fund (differentiation cost cδ ↓)"
+  },
+  {
+    "objectID": "research/working-papers/2025-01-31-AI-Competition/index.html#model-at-a-glance",
+    "href": "research/working-papers/2025-01-31-AI-Competition/index.html#model-at-a-glance",
+    "title": "Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content",
+    "section": "Model at a glance",
+    "text": "Model at a glance\n\n\n\n\n\n\n\n\nSymbol\nMeaning\nNotes\n\n\n\n\n\\(e_i\\)\nEffort (posting frequency)\nContinuous, chosen after adoption\n\n\n\\(\\delta_i\\)\nDifferentiation / authenticity\nCostly but boosts novelty score\n\n\n\\(A_i\\in\\{0,1\\}\\)\nAI adoption\nPays fixed fee \\(f\\); lowers \\(c_e\\)\n\n\n\\(w_i = e_i^{\\gamma}\\,g(\\delta_i;\\bar\\delta)\\)\nRanking weight\n\\(g=\\dfrac{1+\\lambda\\delta_i}{1+\\lambda\\bar\\delta}\\)\n\n\n\\(s_i = w_i / \\textstyle\\sum_j w_j\\)\nImpression share\nTullock success function\n\n\nBenefit\n\\(u_i = s_i\\,v(\\delta_i,\\theta_i)\\)\n\\(v=\\beta_0+\\beta_1\\theta+\\beta_2\\delta\\)\n\n\nEffort cost\n\\(\\tfrac12 c_e(A_i) e_i^2\\)\nQuadratic\n\n\n\n\nEffort rule (γ = 1)\nBecause most feeds reward raw frequency linearly (\\(\\gamma=1\\)),\n\\[\ne_i^{\\star} \\;=\\; \\frac{v(\\delta_i,\\theta_i)\\,g(\\delta_i;\\bar\\delta)}\n                       {c_e(A_i)\\,W},\n\\qquad\nW=\\int_0^1 e_j g_j\\,dj .\n\\]\n\n\nAdoption threshold\nAI is profitable for talent \\(\\theta\\) when\n\\[\nf \\;\\le\\; f^{\\dagger}(\\theta)\n      = \\frac{v(\\delta_0^{\\star},\\theta)^2\n              g(\\delta_0^{\\star};\\bar\\delta)^2}\n             {2W^{2}}\\Bigl[c_e(1)^{-1}-c_e(0)^{-1}\\Bigr].\n\\]\nMonotonicity in \\(\\theta\\) delivers a single cut-off \\(\\hat\\theta\\)."
+  },
+  {
+    "objectID": "research/working-papers/2025-01-31-AI-Competition/index.html#equilibrium-regimes-γ-1",
+    "href": "research/working-papers/2025-01-31-AI-Competition/index.html#equilibrium-regimes-γ-1",
+    "title": "Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content",
+    "section": "Equilibrium regimes (γ = 1)",
+    "text": "Equilibrium regimes (γ = 1)\n\nScaled-output: cheap AI (\\(f\\) low) ⇒ everyone adopts, sets \\(\\delta=0\\), floods the feed.\nCraftsmanship: expensive AI (\\(f\\) high) ⇒ nobody adopts, creators invest in authenticity.\nMixed: interior \\(f\\) ⇒ high-talent adopt, low-talent remain “hand-made”; equilibrium talent cut-off \\(\\hat\\theta\\)."
+  },
+  {
+    "objectID": "research/working-papers/2025-01-31-AI-Competition/index.html#welfare-experiment-one-platform",
+    "href": "research/working-papers/2025-01-31-AI-Competition/index.html#welfare-experiment-one-platform",
+    "title": "Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content",
+    "section": "Welfare experiment (one-platform)",
+    "text": "Welfare experiment (one-platform)\n\n\n\n\n\n\n\n\n\nScenario\nWelfare $ $\nAdopt %\nMean $ {} $\n\n\n\n\nBaseline\n1.000\n47 %\n0.000\n\n\nOpenAI price cut (\\(f\\!\\downarrow\\))\n0.916\n86 %\n−0.036\n\n\n+ EU transparency (\\(\\lambda\\!\\uparrow\\))\n0.954\n86 %\n+0.012\n\n\n+ originality subsidy (\\(c_\\delta\\!\\downarrow\\))\n0.994\n83 %\n+0.023\n\n\n\nPrice shock erodes welfare; labels partly restore it; originality fund closes &gt;90 % of the gap."
+  },
+  {
+    "objectID": "research/working-papers/2025-01-31-AI-Competition/index.html#managerial-policy-insights",
+    "href": "research/working-papers/2025-01-31-AI-Competition/index.html#managerial-policy-insights",
+    "title": "Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content",
+    "section": "Managerial & policy insights",
+    "text": "Managerial & policy insights\n\nPlatforms: a small novelty bump (\\(+5 \\% \\lambda\\)) beats hard rate-limits at raising welfare while preserving engagement.\nCreators: square-root intuition is wrong under \\(\\gamma=1\\); optimal posting rises linearly with monetised value and falls with global weight \\(W\\).\nRegulators: transparency mandates are complements, not substitutes, to originality subsidies.\nBrands: owning an always-AI avatar raises denominator \\(W\\) and can backfire on reach unless paired with high-\\(\\delta\\) creative spend."
+  },
+  {
+    "objectID": "research/working-papers/2025-01-31-AI-Competition/index.html#extensions",
+    "href": "research/working-papers/2025-01-31-AI-Competition/index.html#extensions",
+    "title": "Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content",
+    "section": "Extensions",
+    "text": "Extensions\n\nMulti-platform & multihoming\nCreators allocate effort \\(e_{ip}\\) across \\(P\\) platforms and pay a per-platform overhead \\(\\phi_p\\). A low-\\(\\lambda_p\\) rival draws spam, raising own-platform welfare when exclusivity bonuses are too small.\n\n\nBrand-owned AI avatars\nInject a mass \\(M_{\\text{brand}}\\) with \\(A=1\\).\nWelfare derivative w.r.t.\\(M_{\\text{brand}}\\) is negative unless labels (\\(\\lambda\\uparrow\\)) or creative spend (\\(\\delta\\uparrow\\)) offset the denominator shock."
+  },
+  {
+    "objectID": "research/working-papers/2025-01-31-AI-Competition/index.html#key-take-aways",
+    "href": "research/working-papers/2025-01-31-AI-Competition/index.html#key-take-aways",
+    "title": "Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content",
+    "section": "Key take-aways",
+    "text": "Key take-aways\nCheap AI alone destroys rents; authenticity levers restore them at low.\n\nAdoption arms race is inevitable after a deep cost shock.\nLabel + subsidy bundle dominates blunt throttling.\nLow-cost avatars force mid-talent humans to adopt AI unless platforms reward novelty more strongly."
   },
   {
     "objectID": "teaching/index.html",

@@ -205,6 +205,24 @@ window.Quarto = {
    
   <ul>
   <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#model-at-a-glance" id="toc-model-at-a-glance" class="nav-link" data-scroll-target="#model-at-a-glance">Model at a glance</a>
+  <ul class="collapse">
+  <li><a href="#effort-rule-γ-1" id="toc-effort-rule-γ-1" class="nav-link" data-scroll-target="#effort-rule-γ-1">Effort rule (γ = 1)</a></li>
+  <li><a href="#adoption-threshold" id="toc-adoption-threshold" class="nav-link" data-scroll-target="#adoption-threshold">Adoption threshold</a></li>
+  </ul></li>
+  <li><a href="#equilibrium-regimes-γ-1" id="toc-equilibrium-regimes-γ-1" class="nav-link" data-scroll-target="#equilibrium-regimes-γ-1">Equilibrium regimes (γ = 1)</a></li>
+  <li><a href="#welfare-experiment-one-platform" id="toc-welfare-experiment-one-platform" class="nav-link" data-scroll-target="#welfare-experiment-one-platform">Welfare experiment (one-platform)</a></li>
+  <li><a href="#managerial-policy-insights" id="toc-managerial-policy-insights" class="nav-link" data-scroll-target="#managerial-policy-insights">Managerial &amp; policy insights</a></li>
+  <li><a href="#extensions" id="toc-extensions" class="nav-link" data-scroll-target="#extensions">Extensions</a>
+  <ul class="collapse">
+  <li><a href="#multi-platform-multihoming" id="toc-multi-platform-multihoming" class="nav-link" data-scroll-target="#multi-platform-multihoming">Multi-platform &amp; multihoming</a></li>
+  <li><a href="#brand-owned-ai-avatars" id="toc-brand-owned-ai-avatars" class="nav-link" data-scroll-target="#brand-owned-ai-avatars">Brand-owned AI avatars</a></li>
+  </ul></li>
+  <li><a href="#key-take-aways" id="toc-key-take-aways" class="nav-link" data-scroll-target="#key-take-aways">Key take-aways</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -218,8 +236,190 @@ window.Quarto = {
 <section id="abstract" class="level1">
 <h1>Abstract</h1>
 <p>Generative artificial intelligence (AI) has collapsed the marginal cost of producing social-media content, raising concern that low-quality “AI spam’’ could flood user feeds and depress creator wages. We build a two-lever contest model in which each creator chooses both <em>scale</em> (posting effort) and <em>originality</em> (differentiation). Adopting AI requires a fixed fee but lowers the marginal cost of effort, while a novelty-weighted ranking algorithm rewards distinctiveness. For the empirically relevant case of a linear Tullock contest, we derive a closed-form adoption threshold <span class="math inline">\(f^{\dagger}(\theta)\propto v^{3/2}\)</span>, show existence of equilibrium, and map three regimes: a <strong>scaled-output equilibrium</strong> in which all creators adopt AI and differentiation collapses, a <strong>craftsmanship equilibrium</strong> with zero AI take-up, and a <strong>mixed equilibrium</strong> featuring endogenous sorting by talent. Comparative statics reveal that a modest authenticity signal and a small originality subsidy jointly recover over 90% of the welfare lost when AI adoption costs fall by 80%—exactly the price shock OpenAI announced in June 2025. Policy simulations suggest that a revenue-neutral licence-and-subsidy scheme raises surplus by 3.1% and lowers the Gini coefficient on creator earnings from 0.46 to 0.41, outperforming Pigovian hashtag levies or hard posting caps.</p>
+</section>
+<section id="summary" class="level1">
+<h1>Summary</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><em>Generative-AI has slashed the time-cost of posting.</em><br>
+Platforms fear “feed spam”, creators fear revenue erosion, and regulators care about authenticity.<br>
+We build a Tullock-style <strong>attention contest</strong> to quantify these trade-offs and study three real-world shocks:</p>
+<ol type="1">
+<li><strong>OpenAI’s 80 % price cut</strong> (fixed AI fee ↓)<br>
+</li>
+<li><strong>EU “AI-generated” transparency labels</strong> (novelty weight λ ↑)<br>
+</li>
+<li><strong>An originality subsidy fund</strong> (differentiation cost c<sub>δ</sub> ↓)</li>
+</ol>
+<hr>
+</section>
+<section id="model-at-a-glance" class="level2">
+<h2 class="anchored" data-anchor-id="model-at-a-glance">Model at a glance</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 37%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(e_i\)</span></td>
+<td>Effort (posting frequency)</td>
+<td>Continuous, chosen after adoption</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\delta_i\)</span></td>
+<td>Differentiation / authenticity</td>
+<td>Costly but boosts novelty score</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(A_i\in\{0,1\}\)</span></td>
+<td>AI adoption</td>
+<td>Pays fixed fee <span class="math inline">\(f\)</span>; lowers <span class="math inline">\(c_e\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(w_i = e_i^{\gamma}\,g(\delta_i;\bar\delta)\)</span></td>
+<td>Ranking weight</td>
+<td><span class="math inline">\(g=\dfrac{1+\lambda\delta_i}{1+\lambda\bar\delta}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(s_i = w_i / \textstyle\sum_j w_j\)</span></td>
+<td>Impression share</td>
+<td>Tullock success function</td>
+</tr>
+<tr class="even">
+<td>Benefit</td>
+<td><span class="math inline">\(u_i = s_i\,v(\delta_i,\theta_i)\)</span></td>
+<td><span class="math inline">\(v=\beta_0+\beta_1\theta+\beta_2\delta\)</span></td>
+</tr>
+<tr class="odd">
+<td>Effort cost</td>
+<td><span class="math inline">\(\tfrac12 c_e(A_i) e_i^2\)</span></td>
+<td>Quadratic</td>
+</tr>
+</tbody>
+</table>
+<section id="effort-rule-γ-1" class="level3">
+<h3 class="anchored" data-anchor-id="effort-rule-γ-1">Effort rule (γ = 1)</h3>
+<p>Because most feeds reward raw frequency <em>linearly</em> (<span class="math inline">\(\gamma=1\)</span>),</p>
+<p><span class="math display">\[
+e_i^{\star} \;=\; \frac{v(\delta_i,\theta_i)\,g(\delta_i;\bar\delta)}
+                       {c_e(A_i)\,W},
+\qquad
+W=\int_0^1 e_j g_j\,dj .
+\]</span></p>
+</section>
+<section id="adoption-threshold" class="level3">
+<h3 class="anchored" data-anchor-id="adoption-threshold">Adoption threshold</h3>
+<p>AI is profitable for talent <span class="math inline">\(\theta\)</span> when</p>
+<p><span class="math display">\[
+f \;\le\; f^{\dagger}(\theta)
+      = \frac{v(\delta_0^{\star},\theta)^2
+              g(\delta_0^{\star};\bar\delta)^2}
+             {2W^{2}}\Bigl[c_e(1)^{-1}-c_e(0)^{-1}\Bigr].
+\]</span></p>
+<p>Monotonicity in <span class="math inline">\(\theta\)</span> delivers a single cut-off <span class="math inline">\(\hat\theta\)</span>.</p>
+<hr>
+</section>
+</section>
+<section id="equilibrium-regimes-γ-1" class="level2">
+<h2 class="anchored" data-anchor-id="equilibrium-regimes-γ-1">Equilibrium regimes (γ = 1)</h2>
+<ul>
+<li><strong>Scaled-output:</strong> cheap AI (<span class="math inline">\(f\)</span> low) ⇒ everyone adopts, sets <span class="math inline">\(\delta=0\)</span>, floods the feed.</li>
+<li><strong>Craftsmanship:</strong> expensive AI (<span class="math inline">\(f\)</span> high) ⇒ nobody adopts, creators invest in authenticity.</li>
+<li><strong>Mixed:</strong> interior <span class="math inline">\(f\)</span> ⇒ high-talent adopt, low-talent remain “hand-made”; equilibrium talent cut-off <span class="math inline">\(\hat\theta\)</span>.</li>
+</ul>
+<hr>
+</section>
+<section id="welfare-experiment-one-platform" class="level2">
+<h2 class="anchored" data-anchor-id="welfare-experiment-one-platform">Welfare experiment (one-platform)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 38%">
+<col style="width: 13%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Scenario</th>
+<th>Welfare $ $</th>
+<th>Adopt %</th>
+<th>Mean $ {} $</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Baseline</td>
+<td><strong>1.000</strong></td>
+<td>47 %</td>
+<td>0.000</td>
+</tr>
+<tr class="even">
+<td>OpenAI price cut (<span class="math inline">\(f\!\downarrow\)</span>)</td>
+<td>0.916</td>
+<td>86 %</td>
+<td>−0.036</td>
+</tr>
+<tr class="odd">
+<td>+ EU transparency (<span class="math inline">\(\lambda\!\uparrow\)</span>)</td>
+<td>0.954</td>
+<td>86 %</td>
+<td>+0.012</td>
+</tr>
+<tr class="even">
+<td>+ originality subsidy (<span class="math inline">\(c_\delta\!\downarrow\)</span>)</td>
+<td><strong>0.994</strong></td>
+<td>83 %</td>
+<td>+0.023</td>
+</tr>
+</tbody>
+</table>
+<p><em>Price shock erodes welfare; labels partly restore it; originality fund closes &gt;90 % of the gap.</em></p>
+<hr>
+</section>
+<section id="managerial-policy-insights" class="level2">
+<h2 class="anchored" data-anchor-id="managerial-policy-insights">Managerial &amp; policy insights</h2>
+<ul>
+<li><strong>Platforms:</strong> a small novelty bump (<span class="math inline">\(+5 \% \lambda\)</span>) <strong>beats</strong> hard rate-limits at raising welfare while preserving engagement.</li>
+<li><strong>Creators:</strong> square-root intuition is wrong under <span class="math inline">\(\gamma=1\)</span>; optimal posting rises <em>linearly</em> with monetised value and falls with global weight <span class="math inline">\(W\)</span>.</li>
+<li><strong>Regulators:</strong> transparency mandates are <em>complements</em>, not substitutes, to originality subsidies.</li>
+<li><strong>Brands:</strong> owning an always-AI avatar raises denominator <span class="math inline">\(W\)</span> and can backfire on reach unless paired with high-<span class="math inline">\(\delta\)</span> creative spend.</li>
+</ul>
+<hr>
+</section>
+<section id="extensions" class="level2">
+<h2 class="anchored" data-anchor-id="extensions">Extensions</h2>
+<section id="multi-platform-multihoming" class="level3">
+<h3 class="anchored" data-anchor-id="multi-platform-multihoming">Multi-platform &amp; multihoming</h3>
+<p>Creators allocate effort <span class="math inline">\(e_{ip}\)</span> across <span class="math inline">\(P\)</span> platforms and pay a per-platform overhead <span class="math inline">\(\phi_p\)</span>. A low-<span class="math inline">\(\lambda_p\)</span> rival draws spam, raising own-platform welfare when exclusivity bonuses are too small.</p>
+</section>
+<section id="brand-owned-ai-avatars" class="level3">
+<h3 class="anchored" data-anchor-id="brand-owned-ai-avatars">Brand-owned AI avatars</h3>
+<p>Inject a mass <span class="math inline">\(M_{\text{brand}}\)</span> with <span class="math inline">\(A=1\)</span>.<br>
+Welfare derivative w.r.t.<span class="math inline">\(M_{\text{brand}}\)</span> is negative unless labels (<span class="math inline">\(\lambda\uparrow\)</span>) or creative spend (<span class="math inline">\(\delta\uparrow\)</span>) offset the denominator shock.</p>
+<hr>
+</section>
+</section>
+<section id="key-take-aways" class="level2">
+<h2 class="anchored" data-anchor-id="key-take-aways">Key take-aways</h2>
+<p><em>Cheap AI alone destroys rents; authenticity levers restore them at low.</em></p>
+<ol type="1">
+<li><p><strong>Adoption arms race</strong> is inevitable after a deep cost shock.</p></li>
+<li><p><strong>Label + subsidy</strong> bundle dominates blunt throttling.</p></li>
+<li><p><strong>Low-cost avatars</strong> force mid-talent humans to adopt AI unless platforms reward novelty more strongly.</p></li>
+</ol>
+<hr>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
