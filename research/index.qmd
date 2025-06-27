@@ -1,5 +1,5 @@
 ---
-title: "Research"
+title: "Research 🎓"
 subtitle: "All of my published and unpublished research projects. Click on each project to learn more."
 listing:
   - id: publications

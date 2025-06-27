@@ -4,7 +4,7 @@ subtitle: "How does childhood mathematical education affect adults' consumption 
 author: 
   - Felicia Nguyen
   - David Schweidel
-# date:
+date: 09/15/2024
 categories: ["Public Policy", "Causal Inference"]
 # image: 
 pdf-url: ./working-papers/2024-03-21-Math-Edu/MathLiteracyDraft.pdf

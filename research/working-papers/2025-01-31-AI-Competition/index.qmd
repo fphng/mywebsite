@@ -3,7 +3,7 @@ title: "Scale or Stand Out? Content Creator Strategy and Welfare in the Age of G
 subtitle: "How does Generative AI affect Content Strategy, and what can platforms do?"
 author: 
   - Felicia Nguyen
-# date:
+date: 05/31/2025
 categories: ["AI", "Content Strategy", "Theory"]
 # image: 
 pdf-url: ./working-papers/2025-01-31-AI-Competition/AI_Competition.pdf
