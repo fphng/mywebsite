@@ -8,7 +8,7 @@
 
 <meta name="author" content="Felicia Nguyen">
 
-<title>Latent–Gaussian Distributional Synthetic Control for Unstructured Marketing Content – FELICIA NGUYEN</title>
+<title>Ask Instacart and the Economics of Generative-AI Grocery Search – FELICIA NGUYEN</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -120,8 +149,8 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">Latent–Gaussian Distributional Synthetic Control for Unstructured Marketing Content</h1>
-            <p class="subtitle lead">A high dimensional extension of the very interesting Distributional Synthetic Control method.</p>
+      <h1 class="title">Ask Instacart and the Economics of Generative-AI Grocery Search</h1>
+            <p class="subtitle lead">Can AI Agents change the last-mile grocery delivery game?</p>
                                 <div class="quarto-categories">
                 <div class="quarto-category">AI</div>
                 <div class="quarto-category">Deep Learning</div>
@@ -164,6 +193,14 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a>
+  <ul class="collapse">
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a></li>
+  <li><a href="#empirical-setting" id="toc-empirical-setting" class="nav-link" data-scroll-target="#empirical-setting">Empirical Setting</a></li>
+  <li><a href="#data-all-feeds-you-already-license" id="toc-data-all-feeds-you-already-license" class="nav-link" data-scroll-target="#data-all-feeds-you-already-license">Data (all feeds you already license)</a></li>
+  <li><a href="#empirical-models" id="toc-empirical-models" class="nav-link" data-scroll-target="#empirical-models">Empirical Models</a></li>
+  <li><a href="#what-these-models-will-tell-us" id="toc-what-these-models-will-tell-us" class="nav-link" data-scroll-target="#what-these-models-will-tell-us">What these models will tell us</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -176,9 +213,163 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="abstract" class="level1">
 <h1>Abstract</h1>
-<p>Traditional synthetic‐control estimators recover mean‐level treatment effects by constructing a weighted combination of control units that best reproduces the pre‐treatment trajectory of a treated unit. <strong>Distributional Synthetic Control</strong> (Gunsilius, 2023) generalizes this idea to the <em>entire outcome distribution</em> by replacing squared‐error fit with optimal‐transport discrepancy between empirical distribution functions. Yet existing implementations assume scalar outcomes such as wages or sales. We develop a new Latent–Gaussian DiSC (LG‑DiSC) that brings distributional causal analysis to <strong>unstructured text</strong> and other high‐volume digital outputs pervasive in quantitative marketing. We embed every document in a low‐dimensional latent space using a Variational Auto‑Encoder (VAE), summarize each period’s latent codes by a single multivariate Gaussian, and exploit the closed‐form Wasserstein‑2 distance and barycenter between Gaussian measures. The approach preserves DiSC’s identification logic, runs in seconds on millions of documents, and, with a decoder, generates counterfactual text for substantive interpretation. We derive consistency and asymptotic normality of the weight estimator, quantify approximation error from the Gaussian sketch, and validate operating characteristics in simulation.</p>
+<p>On 31 May 2023 Instacart introduced <em>Ask Instacart</em>-a ChatGPT-powered search bar that lets U.S. shoppers pose natural-language recipe or grocery queries. Because the feature was enabled for every user on a single day and no rival delivery platform launched a comparable tool during the following quarter, the event forms a sharp natural experiment for evaluating the real-world impact of generative-AI search in last-mile grocery.</p>
+<p>We fuse four data assets already available under academic license-(i) daily debit- and credit-card spend from Consumer Edge, (ii) daily mobile-app engagement metrics from Similarweb, (iii) weekly UPC-level grocery sales from Kilts NielsenIQ, and (iv) store-level foot-traffic from Advan-to construct a matched panel spanning March-September 2023. Using modern staggered Difference-in-Differences estimators and causal-mediation analysis, we will estimate (1) the immediate and dynamic effects of the AI launch on Instacart spending and user engagement, (2) how much of any spending lift is mediated by longer session duration, (3) whether basket-composition diversity rises, and (4) the degree to which e-grocery gains substitute for brick-and-mortar store visits. Robustness checks include placebo launch dates, price-index interactions, and an instrumental-variables design that exploits pre-period Instacart penetration by DMA. The results will deliver the first field-scale evidence on how conversational AI reshapes consumer behavior in online grocery and its spillovers to physical retail, informing both platform strategy and omnichannel retailer partnerships.</p>
+</section>
+<section id="summary" class="level1">
+<h1>Summary</h1>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
+<p>Generative-AI tools promise to make product discovery faster and more intuitive, yet there is almost no large-scale evidence on whether these tools actually change (a) consumer engagement, (b) the mix of products purchased, or (c) the balance between online and in-store grocery channels. Instacart’s nationwide launch of <strong>Ask Instacart</strong> (a ChatGPT-driven search bar released on 31 May 2023) offers a clean, single-day shock that lets us study those questions in the last-mile grocery market-an industry where margins are thin and substitution to brick-and-mortar is strategically important for retailers.</p>
+<hr>
+</section>
+<section id="empirical-setting" class="level2">
+<h2 class="anchored" data-anchor-id="empirical-setting">Empirical Setting</h2>
+<ul>
+<li><strong>Treatment:</strong> a platform-wide feature activation on 31 May 2023.</li>
+<li><strong>Treated unit:</strong> Instacart (all U.S. users at once).</li>
+<li><strong>Control units:</strong> rival delivery apps that did <strong>not</strong> ship a generative-AI search tool during the window (DoorDash Grocery, Shipt, Uber Eats Grocery) plus bricks-and-mortar grocers (Kroger, Publix, Albertsons).</li>
+<li><strong>Study window:</strong> 1 March - 30 September 2023-13 weeks pre-launch and 17 weeks post-launch-chosen to avoid rival AI roll-outs (DoorDash voice ordering 28 Aug 2023, Uber Eats chatbot 20 Sep 2023).</li>
+</ul>
+<hr>
+</section>
+<section id="data-all-feeds-you-already-license" class="level2">
+<h2 class="anchored" data-anchor-id="data-all-feeds-you-already-license">Data (all feeds you already license)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 38%">
+<col style="width: 20%">
+<col style="width: 24%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Construct</th>
+<th>Dataset</th>
+<th>Granularity</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Platform spend</strong></td>
+<td>Consumer Edge card panel (“Delivery Service Provider” table)</td>
+<td><em>Daily</em> by platform</td>
+<td>Captures Instacart, DoorDash, Shipt.</td>
+</tr>
+<tr class="even">
+<td><strong>Mobile engagement</strong></td>
+<td>Similarweb “Mobile Daily App”</td>
+<td><em>Daily</em> DAU, minutes-per-user</td>
+<td>Instacart &amp; controls.</td>
+</tr>
+<tr class="odd">
+<td><strong>Offline grocery sales</strong></td>
+<td>Kilts NielsenIQ Retail Scanner</td>
+<td><em>Weekly</em> dollars &amp; units by UPC</td>
+<td>Aggregate to total grocery.</td>
+</tr>
+<tr class="even">
+<td><strong>Store foot-traffic</strong></td>
+<td>Advan Weekly Patterns</td>
+<td><em>Daily</em> visits per POI</td>
+<td>Kroger, Publix, Albertsons.</td>
+</tr>
+<tr class="odd">
+<td><strong>Price / promo controls</strong></td>
+<td>Kilts UPC price &amp; feature-display flags</td>
+<td><em>Weekly</em></td>
+<td>Builds a Laspeyres price index.</td>
+</tr>
+<tr class="even">
+<td><strong>Geo covariates</strong></td>
+<td>U.S. Census ACS (via Dewey)</td>
+<td>County-year</td>
+<td>Income, urbanicity for heterogeneity.</td>
+</tr>
+</tbody>
+</table>
+<p>All tables reside in the Snowflake reader account <code>DEWEY_DB.RAW</code>; Kilts files are local Parquet.</p>
+<hr>
+</section>
+<section id="empirical-models" class="level2">
+<h2 class="anchored" data-anchor-id="empirical-models">Empirical Models</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 18%">
+<col style="width: 50%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Purpose</th>
+<th>Model</th>
+<th>Equation sketch</th>
+<th>Key fixed effects</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Baseline effect on platform spend</strong></td>
+<td>Sharp Difference-in-Differences</td>
+<td>$ Y_{it}= _{it}+ _i+ <em>t+ </em>{it}$</td>
+<td>platform <span class="math inline">\(i\)</span>, calendar week <span class="math inline">\(t\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Dynamic effects</strong></td>
+<td>Sun &amp; Abraham staggered event-study</td>
+<td>$ Y_{it}= _k _k { _i=k}+ _i+ _t$</td>
+<td>same</td>
+</tr>
+<tr class="odd">
+<td><strong>Engagement mediation</strong></td>
+<td>Baron-Kenny / Imai causal mediation</td>
+<td>Step 1: <span class="math inline">\(M_{it}= \alpha_1\text{Treat}_{it}+.\)</span> <br>Step 2: <span class="math inline">\(Y_{it}= \beta_1\text{Treat}_{it}+ \beta_2 M_{it}+.\)</span></td>
+<td>platform &amp; week</td>
+</tr>
+<tr class="even">
+<td><strong>Basket diversity</strong></td>
+<td>DiD on Shannon-entropy index</td>
+<td><span class="math inline">\(H_{it}= \beta\text{Treat}_{it}+ \gamma_i+ \delta_t+ u_{it}\)</span></td>
+<td>platform, week</td>
+</tr>
+<tr class="odd">
+<td><strong>Offline spillover</strong></td>
+<td>Stacked DiD (Sun-Abraham) on store visits</td>
+<td>Same as dynamic model, unit <span class="math inline">\(i\)</span>= grocery chain</td>
+<td>chain, week</td>
+</tr>
+<tr class="even">
+<td><strong>Robustness: price interaction</strong></td>
+<td>DiD with interaction</td>
+<td>$ Y_{it}= <em>1</em>{it}+ <em>2(</em>{it}!!_t)+.$</td>
+<td>platform, week</td>
+</tr>
+<tr class="odd">
+<td><strong>Measurement-error IV</strong></td>
+<td>2SLS with DMA pre-penetration</td>
+<td>First stage: <span class="math inline">\(\text{Treat}_{it}= \pi Z_i+.\)</span></td>
+<td>DMA, week</td>
+</tr>
+</tbody>
+</table>
+<p>All regressions cluster SEs at the platform (or chain) level and, where weekly data are used, also allow week-level heteroskedasticity.</p>
+<hr>
+</section>
+<section id="what-these-models-will-tell-us" class="level2">
+<h2 class="anchored" data-anchor-id="what-these-models-will-tell-us">What these models will tell us</h2>
+<ul>
+<li><strong>Size &amp; timing</strong> of the spend and engagement lift attributable to Ask Instacart.</li>
+<li><strong>Share mediated by engagement</strong>-how much of the spend effect flows through longer sessions.</li>
+<li><strong>Changes in basket composition</strong>-does generative search push shoppers toward a broader set of categories?</li>
+<li><strong>Cross-channel substitution</strong>-does e-grocery adoption cannibalise store visits and offline sales?</li>
+<li><strong>Robustness</strong> to pricing dynamics and to potential mis-measurement of the treatment indicator.</li>
+</ul>
+<p>With this structure you can proceed straight to data extraction, panel construction, and model estimation.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

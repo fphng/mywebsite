@@ -58,9 +58,44 @@
   {
     "objectID": "research/work-in-progress/2025-05-31-Instcart/index.html",
     "href": "research/work-in-progress/2025-05-31-Instcart/index.html",
-    "title": "Latent–Gaussian Distributional Synthetic Control for Unstructured Marketing Content",
+    "title": "Ask Instacart and the Economics of Generative-AI Grocery Search",
     "section": "",
-    "text": "Abstract\nTraditional synthetic‐control estimators recover mean‐level treatment effects by constructing a weighted combination of control units that best reproduces the pre‐treatment trajectory of a treated unit. Distributional Synthetic Control (Gunsilius, 2023) generalizes this idea to the entire outcome distribution by replacing squared‐error fit with optimal‐transport discrepancy between empirical distribution functions. Yet existing implementations assume scalar outcomes such as wages or sales. We develop a new Latent–Gaussian DiSC (LG‑DiSC) that brings distributional causal analysis to unstructured text and other high‐volume digital outputs pervasive in quantitative marketing. We embed every document in a low‐dimensional latent space using a Variational Auto‑Encoder (VAE), summarize each period’s latent codes by a single multivariate Gaussian, and exploit the closed‐form Wasserstein‑2 distance and barycenter between Gaussian measures. The approach preserves DiSC’s identification logic, runs in seconds on millions of documents, and, with a decoder, generates counterfactual text for substantive interpretation. We derive consistency and asymptotic normality of the weight estimator, quantify approximation error from the Gaussian sketch, and validate operating characteristics in simulation."
+    "text": "On 31 May 2023 Instacart introduced Ask Instacart-a ChatGPT-powered search bar that lets U.S. shoppers pose natural-language recipe or grocery queries. Because the feature was enabled for every user on a single day and no rival delivery platform launched a comparable tool during the following quarter, the event forms a sharp natural experiment for evaluating the real-world impact of generative-AI search in last-mile grocery.\nWe fuse four data assets already available under academic license-(i) daily debit- and credit-card spend from Consumer Edge, (ii) daily mobile-app engagement metrics from Similarweb, (iii) weekly UPC-level grocery sales from Kilts NielsenIQ, and (iv) store-level foot-traffic from Advan-to construct a matched panel spanning March-September 2023. Using modern staggered Difference-in-Differences estimators and causal-mediation analysis, we will estimate (1) the immediate and dynamic effects of the AI launch on Instacart spending and user engagement, (2) how much of any spending lift is mediated by longer session duration, (3) whether basket-composition diversity rises, and (4) the degree to which e-grocery gains substitute for brick-and-mortar store visits. Robustness checks include placebo launch dates, price-index interactions, and an instrumental-variables design that exploits pre-period Instacart penetration by DMA. The results will deliver the first field-scale evidence on how conversational AI reshapes consumer behavior in online grocery and its spillovers to physical retail, informing both platform strategy and omnichannel retailer partnerships."
+  },
+  {
+    "objectID": "research/work-in-progress/2025-05-31-Instcart/index.html#motivation",
+    "href": "research/work-in-progress/2025-05-31-Instcart/index.html#motivation",
+    "title": "Ask Instacart and the Economics of Generative-AI Grocery Search",
+    "section": "Motivation",
+    "text": "Motivation\nGenerative-AI tools promise to make product discovery faster and more intuitive, yet there is almost no large-scale evidence on whether these tools actually change (a) consumer engagement, (b) the mix of products purchased, or (c) the balance between online and in-store grocery channels. Instacart’s nationwide launch of Ask Instacart (a ChatGPT-driven search bar released on 31 May 2023) offers a clean, single-day shock that lets us study those questions in the last-mile grocery market-an industry where margins are thin and substitution to brick-and-mortar is strategically important for retailers."
+  },
+  {
+    "objectID": "research/work-in-progress/2025-05-31-Instcart/index.html#empirical-setting",
+    "href": "research/work-in-progress/2025-05-31-Instcart/index.html#empirical-setting",
+    "title": "Ask Instacart and the Economics of Generative-AI Grocery Search",
+    "section": "Empirical Setting",
+    "text": "Empirical Setting\n\nTreatment: a platform-wide feature activation on 31 May 2023.\nTreated unit: Instacart (all U.S. users at once).\nControl units: rival delivery apps that did not ship a generative-AI search tool during the window (DoorDash Grocery, Shipt, Uber Eats Grocery) plus bricks-and-mortar grocers (Kroger, Publix, Albertsons).\nStudy window: 1 March - 30 September 2023-13 weeks pre-launch and 17 weeks post-launch-chosen to avoid rival AI roll-outs (DoorDash voice ordering 28 Aug 2023, Uber Eats chatbot 20 Sep 2023)."
+  },
+  {
+    "objectID": "research/work-in-progress/2025-05-31-Instcart/index.html#data-all-feeds-you-already-license",
+    "href": "research/work-in-progress/2025-05-31-Instcart/index.html#data-all-feeds-you-already-license",
+    "title": "Ask Instacart and the Economics of Generative-AI Grocery Search",
+    "section": "Data (all feeds you already license)",
+    "text": "Data (all feeds you already license)\n\n\n\n\n\n\n\n\n\nConstruct\nDataset\nGranularity\nNotes\n\n\n\n\nPlatform spend\nConsumer Edge card panel (“Delivery Service Provider” table)\nDaily by platform\nCaptures Instacart, DoorDash, Shipt.\n\n\nMobile engagement\nSimilarweb “Mobile Daily App”\nDaily DAU, minutes-per-user\nInstacart & controls.\n\n\nOffline grocery sales\nKilts NielsenIQ Retail Scanner\nWeekly dollars & units by UPC\nAggregate to total grocery.\n\n\nStore foot-traffic\nAdvan Weekly Patterns\nDaily visits per POI\nKroger, Publix, Albertsons.\n\n\nPrice / promo controls\nKilts UPC price & feature-display flags\nWeekly\nBuilds a Laspeyres price index.\n\n\nGeo covariates\nU.S. Census ACS (via Dewey)\nCounty-year\nIncome, urbanicity for heterogeneity.\n\n\n\nAll tables reside in the Snowflake reader account DEWEY_DB.RAW; Kilts files are local Parquet."
+  },
+  {
+    "objectID": "research/work-in-progress/2025-05-31-Instcart/index.html#empirical-models",
+    "href": "research/work-in-progress/2025-05-31-Instcart/index.html#empirical-models",
+    "title": "Ask Instacart and the Economics of Generative-AI Grocery Search",
+    "section": "Empirical Models",
+    "text": "Empirical Models\n\n\n\n\n\n\n\n\n\nPurpose\nModel\nEquation sketch\nKey fixed effects\n\n\n\n\nBaseline effect on platform spend\nSharp Difference-in-Differences\n$ Y_{it}= _{it}+ _i+ t+ {it}$\nplatform \\(i\\), calendar week \\(t\\)\n\n\nDynamic effects\nSun & Abraham staggered event-study\n$ Y_{it}= _k _k { _i=k}+ _i+ _t$\nsame\n\n\nEngagement mediation\nBaron-Kenny / Imai causal mediation\nStep 1: \\(M_{it}= \\alpha_1\\text{Treat}_{it}+.\\) Step 2: \\(Y_{it}= \\beta_1\\text{Treat}_{it}+ \\beta_2 M_{it}+.\\)\nplatform & week\n\n\nBasket diversity\nDiD on Shannon-entropy index\n\\(H_{it}= \\beta\\text{Treat}_{it}+ \\gamma_i+ \\delta_t+ u_{it}\\)\nplatform, week\n\n\nOffline spillover\nStacked DiD (Sun-Abraham) on store visits\nSame as dynamic model, unit \\(i\\)= grocery chain\nchain, week\n\n\nRobustness: price interaction\nDiD with interaction\n$ Y_{it}= 1{it}+ 2({it}!!_t)+.$\nplatform, week\n\n\nMeasurement-error IV\n2SLS with DMA pre-penetration\nFirst stage: \\(\\text{Treat}_{it}= \\pi Z_i+.\\)\nDMA, week\n\n\n\nAll regressions cluster SEs at the platform (or chain) level and, where weekly data are used, also allow week-level heteroskedasticity."
+  },
+  {
+    "objectID": "research/work-in-progress/2025-05-31-Instcart/index.html#what-these-models-will-tell-us",
+    "href": "research/work-in-progress/2025-05-31-Instcart/index.html#what-these-models-will-tell-us",
+    "title": "Ask Instacart and the Economics of Generative-AI Grocery Search",
+    "section": "What these models will tell us",
+    "text": "What these models will tell us\n\nSize & timing of the spend and engagement lift attributable to Ask Instacart.\nShare mediated by engagement-how much of the spend effect flows through longer sessions.\nChanges in basket composition-does generative search push shoppers toward a broader set of categories?\nCross-channel substitution-does e-grocery adoption cannibalise store visits and offline sales?\nRobustness to pricing dynamics and to potential mis-measurement of the treatment indicator.\n\nWith this structure you can proceed straight to data extraction, panel construction, and model estimation."
   },
   {
     "objectID": "research/other-research/placeholder/index.html",
@@ -200,7 +235,7 @@
     "href": "research/index.html#work-in-progress",
     "title": "Research 🎓",
     "section": "Work in Progress",
-    "text": "Work in Progress\n\n\n\n\n\nLatent–Gaussian Distributional Synthetic Control for Unstructured Marketing Content\n\n\n\nAI\n\nDeep Learning\n\nCausal Inference\n\n\n\n\n\n\nFelicia Nguyen\n\n\n\n\n\n\n\nLatent–Gaussian Distributional Synthetic Control for Unstructured Marketing Content\n\n\n\nAI\n\nDeep Learning\n\nCausal Inference\n\n\n\n\n\n\nFelicia Nguyen\n\n\n\n\n\nNo matching items"
+    "text": "Work in Progress\n\n\n\n\n\nAsk Instacart and the Economics of Generative-AI Grocery Search\n\n\n\nAI\n\nDeep Learning\n\nCausal Inference\n\n\n\n\n\n\nFelicia Nguyen\n\n\n\n\n\n\n\nLatent–Gaussian Distributional Synthetic Control for Unstructured Marketing Content\n\n\n\nAI\n\nDeep Learning\n\nCausal Inference\n\n\n\n\n\n\nFelicia Nguyen\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "research/published-papers/placeholder/index.html",
