@@ -1,0 +1,28 @@
+# Date format
+date-format: "MMMM YYYY"
+
+freeze: true
+
+# Enable banner style title blocks
+title-block-banner: true
+
+
+# Default knitr options
+execute:
+  echo: false
+  message: false
+  warning: false
+
+include-back-link: false
+
+format:
+  html:
+    template-partials:
+      - ../html/research/title-block.html
+    toc: true
+    toc-title: Contents
+    toc-location: left
+
+reference-location: margin
+citation-location: margin
+cap-location: margin

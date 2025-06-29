@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/teaching/index.html",
+    "items": []
+  },
+  {
     "listing": "/blog/index.html",
     "items": [
       "/blog/posts/Draft_WebsiteBuild/index.html"
@@ -8,16 +12,10 @@
   {
     "listing": "/research/index.html",
     "items": [
-      "/research/working-papers/2024-03-21-Math-Edu/index.html",
       "/research/working-papers/2025-01-31-AI-Competition/index.html",
+      "/research/working-papers/2024-03-21-Math-Edu/index.html",
       "/research/work-in-progress/2025-05-31-Instcart/index.html",
       "/research/work-in-progress/2025-05-31-LG-DISC/index.html"
-    ]
-  },
-  {
-    "listing": "/teaching/index.html",
-    "items": [
-      "/teaching/course-applied-economics-analysis/index.html"
     ]
   }
 ]

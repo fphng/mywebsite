@@ -7,8 +7,12 @@ author:
     affiliation:
       - name: "Goizueta Business School"
       - name: "Emory University"
-# date:
+date: 04/24/2025
 categories: ["AI", "Deep Learning", "Causal Inference"]
+pub-info:
+  reference: >-
+    <strong>Felicia Nguyen</strong>, “Ask Instacart and the Economics of Generative-AI Grocery Search”
+
 # image: 
 # pdf-url: 
 # external-url:
@@ -23,6 +27,10 @@ categories: ["AI", "Deep Learning", "Causal Inference"]
 #   doi:
 page-layout: full
 title-block-banner: true
+pub-status: 
+  status: Writing
+  class: warning
+  icon: fa-solid fa-pencil
 ---
 
 # Abstract
@@ -35,7 +43,9 @@ We fuse four data assets already available under academic license-(i) daily debi
 
 ## Motivation
 
-Generative-AI tools promise to make product discovery faster and more intuitive, yet there is almost no large-scale evidence on whether these tools actually change (a) consumer engagement, (b) the mix of products purchased, or (c) the balance between online and in-store grocery channels. Instacart's nationwide launch of **Ask Instacart** (a ChatGPT-driven search bar released on 31 May 2023) offers a clean, single-day shock that lets us study those questions in the last-mile grocery market-an industry where margins are thin and substitution to brick-and-mortar is strategically important for retailers.
+Generative-AI tools promise to make product discovery faster and more intuitive, yet there is almost no large-scale evidence on whether these tools actually change (a) consumer engagement, (b) the mix of products purchased, or (c) the balance between online and in-store grocery channels. Instacart's nationwide launch of **Ask Instacart** (a ChatGPT-driven search bar released on 31 May 2023[^1]) offers a clean, single-day shock that lets us study those questions in the last-mile grocery market-an industry where margins are thin and substitution to brick-and-mortar is strategically important for retailers.
+
+[^1]: See the Techcruch article here [https://techcrunch.com](https://techcrunch.com/2023/05/31/instacart-in-app-ai-search-tool-powered-by-chatgpt/).
 
 ---
 
@@ -48,7 +58,7 @@ Generative-AI tools promise to make product discovery faster and more intuitive,
 
 ---
 
-## Data (all feeds you already license)
+## Data
 
 | Construct                  | Dataset                                                      | Granularity                     | Notes                                 |
 | -------------------------- | ------------------------------------------------------------ | ------------------------------- | ------------------------------------- |
@@ -67,12 +77,12 @@ All tables reside in the Snowflake reader account `DEWEY_DB.RAW`; Kilts files ar
 
 | Purpose                               | Model                                     | Equation sketch                                                                                                 | Key fixed effects               |
 | ------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| **Baseline effect on platform spend** | Sharp Difference-in-Differences           | $ \ln Y_{it}= \beta\text{Treat}_{it}+ \gamma_i+ \delta_t+ \varepsilon_{it}$                                     | platform $i$, calendar week $t$ |
-| **Dynamic effects**                   | Sun & Abraham staggered event-study       | $ \ln Y_{it}= \sum_k \theta_k \mathbf 1\{ \tau_i=k\}+ \gamma_i+ \delta_t$                                       | same                            |
+| **Baseline effect on platform spend** | Sharp Difference-in-Differences           | $\ln Y_{it}= \beta\text{Treat}_{it}+ \gamma_i+ \delta_t+ \varepsilon_{it}$                                     | platform $i$, calendar week $t$ |
+| **Dynamic effects**                   | Sun & Abraham staggered event-study       | $\ln Y_{it}= \sum_k \theta_k \mathbf 1\{ \tau_i=k\}+ \gamma_i+ \delta_t$                                       | same                            |
 | **Engagement mediation**              | Baron-Kenny / Imai causal mediation       | Step 1: $M_{it}= \alpha_1\text{Treat}_{it}+.$  <br>Step 2: $Y_{it}= \beta_1\text{Treat}_{it}+ \beta_2 M_{it}+.$ | platform & week                 |
-| **Basket diversity**                  | DiD on Shannon-entropy index              | $H_{it}= \beta\text{Treat}_{it}+ \gamma_i+ \delta_t+ u_{it}$                                                    | platform, week                  |
+| **Basket diversity**                  | DiD on Hirfindahl index              | $H_{it}= \beta\text{Treat}_{it}+ \gamma_i+ \delta_t+ u_{it}$                                                    | platform, week                  |
 | **Offline spillover**                 | Stacked DiD (Sun-Abraham) on store visits | Same as dynamic model, unit $i$= grocery chain                                                                  | chain, week                     |
-| **Robustness: price interaction**     | DiD with interaction                      | $ \ln Y_{it}= \beta_1\text{Treat}_{it}+ \beta_2(\text{Treat}_{it}\!\times\!\text{PriceIdx}_t)+.$                | platform, week                  |
+| **Robustness: price interaction**     | DiD with interaction                      | $\ln Y_{it}= \beta_1\text{Treat}_{it}+ \beta_2(\text{Treat}_{it}\!\times\!\text{PriceIdx}_t)+.$                | platform, week                  |
 | **Measurement-error IV**              | 2SLS with DMA pre-penetration             | First stage: $\text{Treat}_{it}= \pi Z_i+.$                                                                     | DMA, week                       |
 
 All regressions cluster SEs at the platform (or chain) level and, where weekly data are used, also allow week-level heteroskedasticity.
@@ -87,4 +97,6 @@ All regressions cluster SEs at the platform (or chain) level and, where weekly d
 * **Cross-channel substitution**-does e-grocery adoption cannibalise store visits and offline sales?
 * **Robustness** to pricing dynamics and to potential mis-measurement of the treatment indicator.
 
-With this structure you can proceed straight to data extraction, panel construction, and model estimation.
+## Next steps
+
+- Data cleaning finished, moving to analysis.

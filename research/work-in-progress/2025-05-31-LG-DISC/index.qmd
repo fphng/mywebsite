@@ -7,8 +7,12 @@ author:
     affiliation:
       - name: "Goizueta Business School"
       - name: "Emory University"
-# date:
+date: 11/12/2024
 categories: ["AI", "Deep Learning", "Causal Inference"]
+pub-info:
+  reference: >-
+    <strong>Felicia Nguyen</strong>, “Latent–Gaussian Distributional Synthetic Control for Unstructured Marketing Content”
+
 # image: 
 # pdf-url: 
 # external-url:

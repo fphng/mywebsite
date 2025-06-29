@@ -14,6 +14,14 @@ author:
       - name: "Emory University"
 date: 05/31/2025
 categories: ["AI", "Content Strategy", "Theory"]
+pub-info:
+  reference: >-
+    <strong>Felicia Nguyen</strong>, “Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content”
+  links:
+    - name: PDF
+      url: AI_Competition.pdf
+      local: true
+      icon: fa-solid fa-file-pdf
 # image: 
 pdf-url: ./working-papers/2025-01-31-AI-Competition/AI_Competition.pdf
 # external-url:

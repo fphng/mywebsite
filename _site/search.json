@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "teaching/course-applied-economics-analysis/index.html",
-    "href": "teaching/course-applied-economics-analysis/index.html",
-    "title": "Applied Economics Analysis",
+    "objectID": "teaching/index.html",
+    "href": "teaching/index.html",
+    "title": "Teaching",
     "section": "",
-    "text": "A first year graduate course aimed to prepare students with practical programming skills for pursuing academic research.\nI designed and instructed this course.\n\nCourse Materials:\n\nBrown University, Spring 2025\nBrown University, Spring 2024\n\n\n\nCourse Description\nThis course prepares students to conduct independent research by providing the necessary skills in programming and project organization. Topics covered will include version control, integrated development environments (IDEs), programming basics, package environments, functional programming, data visualization, data science, and more. Material will be presented using the programming language R, with some time spent on introductions to Python, Julia, and some basics of HTML. By the end of the course students should feel comfortable in the major programming languages used in economic research and in producing their own work as a replicable, sustainable project.\n\n\nTeaching Reviews\n\nBrown University, Spring 2024"
+    "text": "All of my teaching resources."
+  },
+  {
+    "objectID": "teaching/index.html#teaching-assistant",
+    "href": "teaching/index.html#teaching-assistant",
+    "title": "Teaching",
+    "section": "Teaching Assistant",
+    "text": "Teaching Assistant\n\nRegression Analysis, undergraduate, Emory University, Spring 2022, Fall 2023, Fall 2024, Spring 2025\nApplied Business Analytics, graduate, Emory University, Spring 2024\nMarketing Analytics, graduate, University of Wisconsin-Madison, Fall 2018"
   },
   {
     "objectID": "research/working-papers/2024-03-21-Math-Edu/index.html",
@@ -67,7 +74,7 @@
     "href": "research/work-in-progress/2025-05-31-Instcart/index.html#motivation",
     "title": "Ask Instacart and the Economics of Generative-AI Grocery Search",
     "section": "Motivation",
-    "text": "Motivation\nGenerative-AI tools promise to make product discovery faster and more intuitive, yet there is almost no large-scale evidence on whether these tools actually change (a) consumer engagement, (b) the mix of products purchased, or (c) the balance between online and in-store grocery channels. Instacart’s nationwide launch of Ask Instacart (a ChatGPT-driven search bar released on 31 May 2023) offers a clean, single-day shock that lets us study those questions in the last-mile grocery market-an industry where margins are thin and substitution to brick-and-mortar is strategically important for retailers."
+    "text": "Motivation\nGenerative-AI tools promise to make product discovery faster and more intuitive, yet there is almost no large-scale evidence on whether these tools actually change (a) consumer engagement, (b) the mix of products purchased, or (c) the balance between online and in-store grocery channels. Instacart’s nationwide launch of Ask Instacart (a ChatGPT-driven search bar released on 31 May 20231) offers a clean, single-day shock that lets us study those questions in the last-mile grocery market-an industry where margins are thin and substitution to brick-and-mortar is strategically important for retailers.\n1 See the Techcruch article here https://techcrunch.com."
   },
   {
     "objectID": "research/work-in-progress/2025-05-31-Instcart/index.html#empirical-setting",
@@ -77,25 +84,32 @@
     "text": "Empirical Setting\n\nTreatment: a platform-wide feature activation on 31 May 2023.\nTreated unit: Instacart (all U.S. users at once).\nControl units: rival delivery apps that did not ship a generative-AI search tool during the window (DoorDash Grocery, Shipt, Uber Eats Grocery) plus bricks-and-mortar grocers (Kroger, Publix, Albertsons).\nStudy window: 1 March - 30 September 2023-13 weeks pre-launch and 17 weeks post-launch-chosen to avoid rival AI roll-outs (DoorDash voice ordering 28 Aug 2023, Uber Eats chatbot 20 Sep 2023)."
   },
   {
-    "objectID": "research/work-in-progress/2025-05-31-Instcart/index.html#data-all-feeds-you-already-license",
-    "href": "research/work-in-progress/2025-05-31-Instcart/index.html#data-all-feeds-you-already-license",
+    "objectID": "research/work-in-progress/2025-05-31-Instcart/index.html#data",
+    "href": "research/work-in-progress/2025-05-31-Instcart/index.html#data",
     "title": "Ask Instacart and the Economics of Generative-AI Grocery Search",
-    "section": "Data (all feeds you already license)",
-    "text": "Data (all feeds you already license)\n\n\n\n\n\n\n\n\n\nConstruct\nDataset\nGranularity\nNotes\n\n\n\n\nPlatform spend\nConsumer Edge card panel (“Delivery Service Provider” table)\nDaily by platform\nCaptures Instacart, DoorDash, Shipt.\n\n\nMobile engagement\nSimilarweb “Mobile Daily App”\nDaily DAU, minutes-per-user\nInstacart & controls.\n\n\nOffline grocery sales\nKilts NielsenIQ Retail Scanner\nWeekly dollars & units by UPC\nAggregate to total grocery.\n\n\nStore foot-traffic\nAdvan Weekly Patterns\nDaily visits per POI\nKroger, Publix, Albertsons.\n\n\nPrice / promo controls\nKilts UPC price & feature-display flags\nWeekly\nBuilds a Laspeyres price index.\n\n\nGeo covariates\nU.S. Census ACS (via Dewey)\nCounty-year\nIncome, urbanicity for heterogeneity.\n\n\n\nAll tables reside in the Snowflake reader account DEWEY_DB.RAW; Kilts files are local Parquet."
+    "section": "Data",
+    "text": "Data\n\n\n\n\n\n\n\n\n\nConstruct\nDataset\nGranularity\nNotes\n\n\n\n\nPlatform spend\nConsumer Edge card panel (“Delivery Service Provider” table)\nDaily by platform\nCaptures Instacart, DoorDash, Shipt.\n\n\nMobile engagement\nSimilarweb “Mobile Daily App”\nDaily DAU, minutes-per-user\nInstacart & controls.\n\n\nOffline grocery sales\nKilts NielsenIQ Retail Scanner\nWeekly dollars & units by UPC\nAggregate to total grocery.\n\n\nStore foot-traffic\nAdvan Weekly Patterns\nDaily visits per POI\nKroger, Publix, Albertsons.\n\n\nPrice / promo controls\nKilts UPC price & feature-display flags\nWeekly\nBuilds a Laspeyres price index.\n\n\nGeo covariates\nU.S. Census ACS (via Dewey)\nCounty-year\nIncome, urbanicity for heterogeneity.\n\n\n\nAll tables reside in the Snowflake reader account DEWEY_DB.RAW; Kilts files are local Parquet."
   },
   {
     "objectID": "research/work-in-progress/2025-05-31-Instcart/index.html#empirical-models",
     "href": "research/work-in-progress/2025-05-31-Instcart/index.html#empirical-models",
     "title": "Ask Instacart and the Economics of Generative-AI Grocery Search",
     "section": "Empirical Models",
-    "text": "Empirical Models\n\n\n\n\n\n\n\n\n\nPurpose\nModel\nEquation sketch\nKey fixed effects\n\n\n\n\nBaseline effect on platform spend\nSharp Difference-in-Differences\n$ Y_{it}= _{it}+ _i+ t+ {it}$\nplatform \\(i\\), calendar week \\(t\\)\n\n\nDynamic effects\nSun & Abraham staggered event-study\n$ Y_{it}= _k _k { _i=k}+ _i+ _t$\nsame\n\n\nEngagement mediation\nBaron-Kenny / Imai causal mediation\nStep 1: \\(M_{it}= \\alpha_1\\text{Treat}_{it}+.\\) Step 2: \\(Y_{it}= \\beta_1\\text{Treat}_{it}+ \\beta_2 M_{it}+.\\)\nplatform & week\n\n\nBasket diversity\nDiD on Shannon-entropy index\n\\(H_{it}= \\beta\\text{Treat}_{it}+ \\gamma_i+ \\delta_t+ u_{it}\\)\nplatform, week\n\n\nOffline spillover\nStacked DiD (Sun-Abraham) on store visits\nSame as dynamic model, unit \\(i\\)= grocery chain\nchain, week\n\n\nRobustness: price interaction\nDiD with interaction\n$ Y_{it}= 1{it}+ 2({it}!!_t)+.$\nplatform, week\n\n\nMeasurement-error IV\n2SLS with DMA pre-penetration\nFirst stage: \\(\\text{Treat}_{it}= \\pi Z_i+.\\)\nDMA, week\n\n\n\nAll regressions cluster SEs at the platform (or chain) level and, where weekly data are used, also allow week-level heteroskedasticity."
+    "text": "Empirical Models\n\n\n\n\n\n\n\n\n\nPurpose\nModel\nEquation sketch\nKey fixed effects\n\n\n\n\nBaseline effect on platform spend\nSharp Difference-in-Differences\n\\(\\ln Y_{it}= \\beta\\text{Treat}_{it}+ \\gamma_i+ \\delta_t+ \\varepsilon_{it}\\)\nplatform \\(i\\), calendar week \\(t\\)\n\n\nDynamic effects\nSun & Abraham staggered event-study\n\\(\\ln Y_{it}= \\sum_k \\theta_k \\mathbf 1\\{ \\tau_i=k\\}+ \\gamma_i+ \\delta_t\\)\nsame\n\n\nEngagement mediation\nBaron-Kenny / Imai causal mediation\nStep 1: \\(M_{it}= \\alpha_1\\text{Treat}_{it}+.\\) Step 2: \\(Y_{it}= \\beta_1\\text{Treat}_{it}+ \\beta_2 M_{it}+.\\)\nplatform & week\n\n\nBasket diversity\nDiD on Hirfindahl index\n\\(H_{it}= \\beta\\text{Treat}_{it}+ \\gamma_i+ \\delta_t+ u_{it}\\)\nplatform, week\n\n\nOffline spillover\nStacked DiD (Sun-Abraham) on store visits\nSame as dynamic model, unit \\(i\\)= grocery chain\nchain, week\n\n\nRobustness: price interaction\nDiD with interaction\n\\(\\ln Y_{it}= \\beta_1\\text{Treat}_{it}+ \\beta_2(\\text{Treat}_{it}\\!\\times\\!\\text{PriceIdx}_t)+.\\)\nplatform, week\n\n\nMeasurement-error IV\n2SLS with DMA pre-penetration\nFirst stage: \\(\\text{Treat}_{it}= \\pi Z_i+.\\)\nDMA, week\n\n\n\nAll regressions cluster SEs at the platform (or chain) level and, where weekly data are used, also allow week-level heteroskedasticity."
   },
   {
     "objectID": "research/work-in-progress/2025-05-31-Instcart/index.html#what-these-models-will-tell-us",
     "href": "research/work-in-progress/2025-05-31-Instcart/index.html#what-these-models-will-tell-us",
     "title": "Ask Instacart and the Economics of Generative-AI Grocery Search",
     "section": "What these models will tell us",
-    "text": "What these models will tell us\n\nSize & timing of the spend and engagement lift attributable to Ask Instacart.\nShare mediated by engagement-how much of the spend effect flows through longer sessions.\nChanges in basket composition-does generative search push shoppers toward a broader set of categories?\nCross-channel substitution-does e-grocery adoption cannibalise store visits and offline sales?\nRobustness to pricing dynamics and to potential mis-measurement of the treatment indicator.\n\nWith this structure you can proceed straight to data extraction, panel construction, and model estimation."
+    "text": "What these models will tell us\n\nSize & timing of the spend and engagement lift attributable to Ask Instacart.\nShare mediated by engagement-how much of the spend effect flows through longer sessions.\nChanges in basket composition-does generative search push shoppers toward a broader set of categories?\nCross-channel substitution-does e-grocery adoption cannibalise store visits and offline sales?\nRobustness to pricing dynamics and to potential mis-measurement of the treatment indicator."
+  },
+  {
+    "objectID": "research/work-in-progress/2025-05-31-Instcart/index.html#next-steps",
+    "href": "research/work-in-progress/2025-05-31-Instcart/index.html#next-steps",
+    "title": "Ask Instacart and the Economics of Generative-AI Grocery Search",
+    "section": "Next steps",
+    "text": "Next steps\n\nData cleaning finished, moving to analysis."
   },
   {
     "objectID": "research/other-research/placeholder/index.html",
@@ -228,14 +242,14 @@
     "href": "research/index.html#working-papers",
     "title": "Research 🎓",
     "section": "Working Papers",
-    "text": "Working Papers\n\n\n\n\n\nLong-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms\n\n\n\nPublic Policy\n\nCausal Inference\n\n\n\n\n\n\nFelicia Nguyen, David Schweidel\n\n\n\n\n\n\n\nScale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content\n\n\n\nAI\n\nContent Strategy\n\nTheory\n\n\n\n\n\n\nFelicia Nguyen, David Schweidel\n\n\n\n\n\nNo matching items"
+    "text": "Working Papers\n\n\n\n    \n        \n            \n                Felicia Nguyen, “Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content”\n            \n\n            \n            \n                \n                    \n                            AI\n                        \n                    \n                    \n                            Content Strategy\n                        \n                    \n                    \n                            Theory\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                    \n                        \n                        \n                        \n                             PDF\n                        \n                    \n                        \n                    \n                \n            \n        \n        \n        \n            \n                Felicia Nguyen and David Schweidel, “Long-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms”\n            \n\n            \n            \n                \n                    \n                            Public Policy\n                        \n                    \n                    \n                            Causal Inference\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                        \n                    \n                        \n                        \n                        \n                             PDF\n                        \n                    \n                        \n                    \n                \n            \n        \n        \n\n\nNo matching items"
   },
   {
     "objectID": "research/index.html#work-in-progress",
     "href": "research/index.html#work-in-progress",
     "title": "Research 🎓",
     "section": "Work in Progress",
-    "text": "Work in Progress\n\n\n\n\n\nAsk Instacart and the Economics of Generative-AI Grocery Search\n\n\n\nAI\n\nDeep Learning\n\nCausal Inference\n\n\n\n\n\n\nFelicia Nguyen\n\n\n\n\n\n\n\nLatent–Gaussian Distributional Synthetic Control for Unstructured Marketing Content\n\n\n\nAI\n\nDeep Learning\n\nCausal Inference\n\n\n\n\n\n\nFelicia Nguyen\n\n\n\n\n\nNo matching items"
+    "text": "Work in Progress\n\n\n\n    \n        \n            \n                Felicia Nguyen, “Ask Instacart and the Economics of Generative-AI Grocery Search”\n            \n\n            \n            \n                \n                    \n                            AI\n                        \n                    \n                    \n                            Deep Learning\n                        \n                    \n                    \n                            Causal Inference\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                \n            \n        \n        \n        \n            \n                Felicia Nguyen, “Latent–Gaussian Distributional Synthetic Control for Unstructured Marketing Content”\n            \n\n            \n            \n                \n                    \n                            AI\n                        \n                    \n                    \n                            Deep Learning\n                        \n                    \n                    \n                            Causal Inference\n                        \n                    \n            \n            \n\n            \n            \n            \n            \n                \n                    \n                        \n                             Full details »\n                        \n                    \n                    \n                \n            \n        \n        \n\n\nNo matching items"
   },
   {
     "objectID": "research/published-papers/placeholder/index.html",
@@ -306,19 +320,5 @@
     "title": "Scale or Stand Out? Content Creator Strategy and Welfare in the Age of Generative AI Content",
     "section": "Key take-aways",
     "text": "Key take-aways\nCheap AI alone destroys rents; authenticity levers restore them at low.\n\nAdoption arms race is inevitable after a deep cost shock.\nLabel + subsidy bundle dominates blunt throttling.\nLow-cost avatars force mid-talent humans to adopt AI unless platforms reward novelty more strongly."
-  },
-  {
-    "objectID": "teaching/index.html",
-    "href": "teaching/index.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "All of my teaching resources."
-  },
-  {
-    "objectID": "teaching/index.html#teaching-assistant",
-    "href": "teaching/index.html#teaching-assistant",
-    "title": "Teaching",
-    "section": "Teaching Assistant",
-    "text": "Teaching Assistant\n\nRegression Analysis, undergraduate, Emory University, Spring 2022, Fall 2023, Fall 2024, Spring 2025\nApplied Business Analytics, graduate, Emory University, Spring 2024\nMarketing Analytics, graduate, University of Wisconsin-Madison, Fall 2018"
   }
 ]

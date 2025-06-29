@@ -1,4 +1,29 @@
 /*-- scss:defaults --*/
+
+$white:    #ffffff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #373a3c !default;
+$gray-900: #212529 !default;
+$black:    #000000 !default;
+
+$blue:    #2780e3 !default;
+$indigo:  #6610f2 !default;
+$purple:  #170C3A !default;
+$pink:    #A52C60 !default;
+$red:     #CF4446 !default;
+$orange:  #EE6A24 !default;
+$light-orange:  #FB9E07 !default;
+$yellow:  #F6D645 !default;
+$green:   #118230 !default;
+$teal:    #20c997 !default;
+$cyan:    #3093CF !default;
+
 /* set the navbar background and text color */
 $navbar-bg: #002878 !default;   /* whatever hex you like */
 $navbar-fg: #fcfcfc !default;   /* ensure good contrast */
@@ -92,6 +117,148 @@ $font-family-nav: 'Lato', sans-serif !default;
 
 .title-block .title-block-title {
   color: #d28e00 !important;
+}
+
+
+// Put all the icons in a single row in the hamburger menu
+.navbar-nav.navbar-nav-scroll.ms-auto {
+    flex-direction: row;
+}
+
+
+// Research
+.quarto-title-block {
+    .haiku {
+        text-align: right;
+        margin: 1.3em 0;
+        font-size: 1.6em;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    .quarto-title .quarto-categories {
+        padding-bottom: 0;
+        flex-wrap: wrap;
+        row-gap: 0.4em;
+    }
+
+    .project-details {
+        background-color: rgba(#002878, 0.1);
+        padding: 0.75em;
+        margin: 1em 0;
+    }
+
+    .quarto-title-meta-heading.manual {
+        margin-top: 2em !important;
+    }
+
+    .project-links {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .project-link {
+        display: inline-block;
+        white-space: nowrap;
+        padding: 0 1em 0 0;
+        font-weight: bold;
+    }
+
+}
+
+.back-nav {
+    margin-bottom: 1.5em;
+}
+
+.research {
+    .back-nav a {
+        color: shift-color(#002878, -50%);
+    }
+
+    .project-categories {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.35em 0 0.35em;
+        padding-top: 0.35em;
+        padding-left: 0.5em;
+        padding-bottom: 0;
+        row-gap: 0.4em;
+        column-gap: 0.4em;
+        .project-category {
+            padding: 0.25em 0.75em 0.25em 0em;
+            font-size: 0.7em;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.project-list {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 2em;
+
+        li.project {
+            margin-bottom: 2.5em;
+            border-left: 6px solid shift-color(#002878, -90%);
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    .project-content {
+        padding-left: 0.5em;
+
+        .status {
+            font-size: 1rem;
+            font-weight: 250;
+            padding: 0.2em;
+            margin-right: 0.5em;
+        }
+    }
+
+    .haiku {
+        margin: 0.4rem 0 0rem;
+        font-weight: 300;
+        font-style: italic;
+        text-align: right;
+        color: $gray-600;
+        font-size: 1.1em;
+
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            font-size: 0.95rem;
+        }
+    }
+
+    ul.project-links {
+        margin-bottom: 0;
+    }
+
+    .project-details-listing {
+        margin-top: 0.8em;
+        background-color: shift-color(#002878, -90%);
+        font-size: 0.9rem;
+
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            font-size: 0.95rem;
+        }
+
+        .project-link {
+            display: inline-block;
+            white-space: nowrap;
+            padding: 0.5em 0.5em 0.5em 1em;
+        }
+
+        .details {
+            background-color: #002878;
+            padding-right: 1.5em;
+            a {
+                color: #FFFFFF;
+            }
+        }
+    }
 }
 
 /* ——— Badges / Tags ——— */

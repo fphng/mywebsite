@@ -3,27 +3,27 @@ title: "Research 🎓"
 subtitle: "All of my published and unpublished research projects. Click on each project to learn more."
 listing:
   - id: publications
-    type: default
-    #template: ../custom/research-listings.ejs
+    template: ../html/research/listing.ejs
     categories: true
+    sort: "date desc"
     fields: [image, date, title, author, categories]
     contents:
       - "published-papers/**/*.qmd"
     exclude:
       title: "Placeholder"
   - id: working-papers
-    type: default
-    #template: ../custom/research-listings.ejs
+    template: ../html/research/listing.ejs
     categories: true
+    sort: "date desc"
     fields: [title, author, categories]
     contents:
       - "working-papers/**/*.qmd"
     exclude:
       title: "Placeholder"
   - id: work-in-progress
-    type: default
-    #template: ../custom/research-listings.ejs
+    template: ../html/research/listing.ejs
     categories: true
+    sort: "date desc"
     fields: [title, author, categories]
     contents:
       - "work-in-progress/**/*.qmd"
@@ -31,9 +31,7 @@ listing:
       title: "Placeholder"
 page-layout: full
 title-block-banner: true
-header-includes: <link rel="stylesheet" href="../_assets/listing-default.css">
-resources:
-  - ../_assets/listing-default.css
+toc-location: right
 ---
 
 ## Publications
