@@ -19,7 +19,7 @@ pub-info:
     <strong>Felicia Nguyen</strong> and David Schweidel, “Long-Term Effect of Mathematical Literacy on Consumer Behavior: Evidence from Curricular Reforms”
   links:
     - name: PDF
-      url: MathLiteracyDraft.pdf
+      url: ./research/working-papers/2024-03-21-Math-Edu/MathLiteracyDraft.pdf
       local: true
       icon: fa-solid fa-file-pdf
 # image: 
